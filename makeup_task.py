@@ -126,8 +126,12 @@ def _is_noise(item) -> bool:
 
 def web_search(query: str, max_results: int = 8) -> str:
     """Baidu first, then Sogou-WeChat (catches 公众号 recruitment posts), bing last.
-    GitHub Actions (Linux, foreign IP): baidu/sogou block datacenter IPs, so bing directly."""
+    GitHub Actions (Linux, foreign IP): baidu/sogou block datacenter IPs; DuckDuckGo HTML
+    works reliably from abroad, bing as fallback."""
     if sys.platform.startswith('linux'):
+        ddg = _ddg_search(query, max_results)
+        if ddg:
+            return json.dumps(ddg, ensure_ascii=False, indent=2)
         return _bing_search(query, max_results)
     baidu = _baidu_search(query, max_results)
     sogou = _sogou_search(query, max_results)
@@ -196,6 +200,43 @@ def _baidu_search(query: str, max_results: int) -> list:
                 results.append({'title': t, 'url': u, 'snippet': ''})
                 if len(results) >= max_results:
                     break
+        return results
+    except Exception:
+        return []
+
+def _ddg_search(query: str, max_results: int) -> list:
+    """DuckDuckGo HTML search — reliable from datacenter IPs (GitHub Actions)."""
+    try:
+        url = 'https://html.duckduckgo.com/html/?q=' + urllib.parse.quote(query)
+        req = urllib.request.Request(url, headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36',
+        })
+        page = urllib.request.urlopen(req, timeout=20).read().decode('utf-8', errors='replace')
+        results = []
+        seen = set()
+        for m in re.finditer(r'<a[^>]*class="result__a"[^>]*href="([^"]+)"[^>]*>(.*?)</a>', page, re.S):
+            href = html_mod.unescape(m.group(1))
+            title = html_mod.unescape(re.sub(r'<[^>]+>', '', m.group(2))).strip()
+            if not title or href in seen:
+                continue
+            # DDG redirect param carries the real URL
+            if 'uddg=' in href:
+                qs = urllib.parse.parse_qs(urllib.parse.urlparse(href).query)
+                real = qs.get('uddg', [href])[0]
+                href = real
+            try:
+                nl = urllib.parse.urlparse(href).netloc.lower()
+            except Exception:
+                nl = ''
+            if '.gov.cn' in nl or any(b in nl for b in ('baike.baidu', 'baike.sogou', 'zhidao.baidu', 'map.baidu')):
+                continue
+            seen.add(href)
+            # snippet from following result__snippet block
+            sm = re.search(r'class="result__snippet"[^>]*>(.*?)</a>', page[m.end():m.end() + 4000], re.S)
+            snippet = html_mod.unescape(re.sub(r'<[^>]+>', '', sm.group(1))).strip() if sm else ''
+            results.append({'title': title, 'url': href, 'snippet': snippet[:500]})
+            if len(results) >= max_results:
+                break
         return results
     except Exception:
         return []
