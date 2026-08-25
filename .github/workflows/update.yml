@@ -1,0 +1,64 @@
+name: Update makeup jobs
+
+on:
+  workflow_dispatch:        # 网页手动触发（手机浏览器 GitHub → Actions → Run workflow）
+  schedule:
+    - cron: '7 0 1-31/2 * *'   # 奇数日 08:07 北京时间 (UTC+8)，与文博站偶数日错开
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: makeup-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Run makeup update (expanded search)
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          ANTHROPIC_BASE_URL: https://api.deepseek.com/anthropic
+          ANTHROPIC_MODEL: deepseek-v4-flash
+          MAKEUP_BASE_DIR: ${{ github.workspace }}
+          TZ: Asia/Shanghai
+        run: python makeup_task.py makeup
+
+      - name: Build site
+        run: python site/build.py
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Sync repo (jobs.md + site)
+        run: |
+          git config user.name "makeup-jobs-bot"
+          git config user.email "makeup-jobs-bot@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Update makeup jobs $(TZ=Asia/Shanghai date +%F)"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi

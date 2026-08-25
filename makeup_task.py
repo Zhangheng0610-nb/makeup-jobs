@@ -386,9 +386,9 @@ def get_prompt(mode):
    - 够 10 条就动笔；**第15轮前必须 write_file 写入 {JOBS_MD}**（文件头部标注"本期收录N条"），剩余轮次补搜替换低质条目
    - 目标 30-40 条，实际搜到多少写多少，不足据实写，宁缺毋滥，**禁止编造岗位和链接**
    - 🆕 只标本次新收录的；保留旧岗位不标
-6. 构建发布：run_bash 依次执行：
-   cd "{SITE_DIR}" && python build.py
-   cd "{SITE_DIR}" && git add index.html build.py sitemap.xml robots.txt CNAME .gitignore && git commit -m "Update makeup jobs {TODAY_STR}" && git push origin main
+6. 构建发布：先检测运行环境——run_bash 执行 `python -c "import os;print(1 if os.environ.get('MAKEUP_BASE_DIR') else 0)"`：
+   - **输出 1 = 云端（GitHub Actions）**：只把 {JOBS_MD} 写好即可，**禁止执行任何 git/build 命令**（Actions 会自动构建部署并同步仓库），做完就结束
+   - **输出 0 = 本地**：依次执行 `cd "{SITE_DIR}" && python build.py` → `cd "{SITE_DIR}" && git add -A && git commit -m "Update makeup jobs {TODAY_STR}" && git push origin main`
 
 ### 文件格式（{JOBS_MD}）
 ```

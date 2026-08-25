@@ -220,6 +220,11 @@ header h1 { font-size: 1.6rem; margin-bottom: 4px; }
   padding: 6px 14px; font-size: .9rem; color: var(--muted);
 }
 .stat-item b { color: var(--text); }
+.update-banner {
+  background: var(--card); border: 1px dashed var(--accent); border-radius: 10px;
+  padding: 10px 16px; font-size: .9rem; margin: 0 0 12px; color: var(--muted);
+}
+.update-banner a { color: var(--accent); font-weight: 600; }
 .summary {
   background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent);
   border-radius: 10px; padding: 12px 16px; font-size: .92rem; margin-bottom: 16px;
@@ -436,6 +441,7 @@ def build_html(data: dict) -> str:
     <span class="stat-item">📅 {update_date} 更新</span>
     <span class="stat-item">🔄 奇数日自动更新</span>
   </div>
+  <div class="update-banner">📱 想立即更新？手机也能操作：<a href="https://github.com/Zhangheng0610-nb/makeup-jobs/actions/workflows/update.yml" target="_blank" rel="noopener">点此打开「Run workflow」按钮</a>（需登录 GitHub，云端自动跑扩大搜索更新，30分钟内连点只生效一次）</div>
   <div class="summary">{summary_html}</div>
   <div class="filter-bar">
     <button data-tab="all" class="active">全部</button>
