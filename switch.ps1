@@ -1,0 +1,1 @@
+﻿& 'C:/Users/张衡/Desktop/宁波化妆师招聘/clash_api.ps1' -Method PUT -Path '/proxies/GLOBAL' -Body '{"name":"香港[1.5x]-优化1"}'

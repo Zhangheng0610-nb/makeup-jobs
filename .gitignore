@@ -1,3 +1,9 @@
 __pycache__/
 *.pyc
 .DS_Store
+update.log
+.makeup_cooldown
+招聘/seed_results.json
+gh_token.json
+gh_token.txt
+device_code.txt
