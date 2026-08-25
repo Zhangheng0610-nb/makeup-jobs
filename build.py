@@ -131,7 +131,7 @@ def parse_jobs(md_file: Path) -> dict:
                 'position': (m_item.group(3) or '').strip(),
                 'salary': '', 'tier': '', 'price': '', 'region': '',
                 'publish_date': '', 'education': '', 'location': '', 'deadline': '',
-                'note': '', 'links': [],
+                'note': '', 'guide': '', 'links': [],
             }
             items.append(cur)
             continue
@@ -154,6 +154,8 @@ def parse_jobs(md_file: Path) -> dict:
                 cur['location'] = val
             elif '截止' in name:
                 cur['deadline'] = val
+            elif '指路' in name:
+                cur['guide'] = val
             continue
         m_link = re.match(r'-\s*🔗\s*\[(.+?)\]\((.+?)\)', s)
         if cur and m_link:
@@ -277,6 +279,8 @@ mark { background: #ffe066; color: #20232a; border-radius: 3px; padding: 0 1px; 
 .job-link { margin-top: 8px; font-size: .88rem; }
 .job-link a { color: var(--accent); text-decoration: none; word-break: break-all; }
 .job-link a:hover { text-decoration: underline; }
+.job-note { margin-top: 6px; font-size: .85rem; color: var(--text); background: var(--accent-soft); border-left: 3px solid var(--accent); padding: 5px 10px; border-radius: 4px; }
+.job-guide { margin-top: 6px; font-size: .85rem; color: var(--blue); background: var(--blue-soft); border-left: 3px solid var(--blue); padding: 5px 10px; border-radius: 4px; }
 .disclaimer {
   background: var(--card); border: 1px dashed var(--border); border-radius: 10px;
   padding: 10px 14px; font-size: .8rem; color: var(--muted); margin-top: 24px;
@@ -303,7 +307,9 @@ def render_card(it: dict) -> str:
         meta.append(f'<span>📅 {html_mod.escape(it["publish_date"][:10])}</span>')
     links = ''.join(
         f'<a href="{html_mod.escape(u)}" target="_blank" rel="noopener">🔗 {html_mod.escape(t)}</a>'
-        for t, u in it['links']) or '<span>📄 见原平台（无直链）</span>'
+        for t, u in it['links']) or '<span>🧭 见下方指路（无直链）</span>'
+    note = f'<div class="job-note">💡 {md_inline(it["note"])}</div>' if it['note'] else ''
+    guide = f'<div class="job-guide">🧭 指路：{md_inline(it["guide"])}</div>' if it['guide'] else ''
 
     search_text = ' '.join([it['company'], it['position'], it['salary'], it['tier'],
                             it['region'], it['price'], it['location']]).lower()
@@ -322,6 +328,8 @@ def render_card(it: dict) -> str:
   </div>
   <div class="job-meta">{''.join(meta)}</div>
   <div class="job-link">{links}</div>
+  {note}
+  {guide}
 </div>'''
 
 JS = """
