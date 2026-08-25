@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一键更新 — 宁波化妆师招聘聚合</title>
+<style>
+  :root { --accent: #e91e63; --accent2: #9c27b0; --bg: #fdf6fa; --card: #ffffff; --text: #2c2c2c; --muted: #777; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.6; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 20px 16px 60px; }
+  h1 { font-size: 1.4rem; margin: 8px 0 4px; color: var(--accent); }
+  .sub { color: var(--muted); font-size: .9rem; margin-bottom: 20px; }
+  .card { background: var(--card); border-radius: 14px; padding: 18px 16px; margin-bottom: 16px; box-shadow: 0 1px 6px rgba(0,0,0,.06); }
+  .card h2 { font-size: 1.05rem; margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
+  .num { background: var(--accent); color: #fff; border-radius: 50%; width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center; font-size: .85rem; flex-shrink: 0; }
+  .big-btn { display: block; width: 100%; padding: 14px 12px; border: none; border-radius: 12px; background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; font-size: 1.05rem; font-weight: 600; text-decoration: none; text-align: center; cursor: pointer; margin: 6px 0; }
+  .big-btn.gh { background: linear-gradient(135deg, #24292f, #57606a); }
+  .big-btn:active { transform: scale(.98); }
+  .tip { background: #fff8e1; border-left: 4px solid #f9a825; border-radius: 8px; padding: 10px 12px; font-size: .88rem; margin-top: 10px; }
+  .tip.ok { background: #e8f5e9; border-left-color: #43a047; }
+  .tip.err { background: #fdecea; border-left-color: #e53935; }
+  ol { padding-left: 22px; margin: 8px 0; }
+  li { margin: 6px 0; font-size: .95rem; }
+  b.hl { color: var(--accent); }
+  input[type=password], input[type=text] { width: 100%; padding: 10px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: .95rem; }
+  .small { font-size: .82rem; color: var(--muted); }
+  .token-btn { background: #43a047; }
+  .hidden { display: none; }
+  #result { min-height: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📱 一键更新</h1>
+  <p class="sub">云端自动跑「扩大搜索」更新，找到更多宁波化妆师好岗位，大约 10-30 分钟完成。</p>
+
+  <div class="card">
+    <h2><span class="num">1</span> 推荐：直接打开 GitHub 点按钮</h2>
+    <a class="big-btn gh" href="https://github.com/Zhangheng0610-nb/makeup-jobs/actions/workflows/update.yml" target="_blank" rel="noopener">打开 GitHub 更新页面</a>
+    <ol>
+      <li>如果页面让你登录 → 先点右上角 <b class="hl">Sign in</b> 登录（用你的 GitHub 账号）</li>
+      <li>登录后，页面<b class="hl">右上角</b>有个紫色按钮 <b class="hl">「Run workflow」</b></li>
+      <li>点「Run workflow」→ 分支保持 <b>main</b> → 点绿色 <b class="hl">「Run workflow」</b> → 完成！</li>
+      <li>等 10-30 分钟后回来刷新网站，就能看到新岗位</li>
+    </ol>
+    <div class="tip">❓ 没有看到「Run workflow」按钮？<b>说明没登录成功</b>，先登录，按钮就出现在右上角。</div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">2</span> 更省事：设置一次令牌，之后点一下就行</h2>
+    <p class="small">按下面步骤设置一次（约 2 分钟），以后更新只点一个按钮，不用再找「Run workflow」。</p>
+    <a class="big-btn" href="https://github.com/settings/tokens/new?scopes=repo,workflow&description=makeup-update" target="_blank" rel="noopener">① 打开 GitHub 创建令牌</a>
+    <ol>
+      <li>名字随便填（已自动填好），有效期选 <b>No expiration</b>（永不过期）</li>
+      <li>直接拉到最底部，点绿色 <b>Generate token</b></li>
+      <li>复制生成的 <b>ghp_xxxx</b> 开头的长串</li>
+      <li>粘贴到下面，点「保存令牌」</li>
+    </ol>
+    <input type="password" id="pat" placeholder="粘贴 ghp_ 开头的令牌" autocomplete="off">
+    <button class="big-btn" id="savePat" style="background:#8e24aa;">保存令牌</button>
+    <div id="patMsg" class="tip hidden"></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">3</span> 开始更新</h2>
+    <button class="big-btn" id="goUpdate">🚀 立即云端更新</button>
+    <div id="result" class="tip hidden"></div>
+    <p class="small" style="margin-top:10px;">⚠️ 30 分钟内重复点击只生效一次（防误触浪费）。设置过的令牌只存在你自己的手机浏览器里，不上传任何地方。</p>
+  </div>
+
+  <div class="card">
+    <h2>常见问题</h2>
+    <p class="small"><b>GitHub 页面打不开？</b> 换用电脑上桌面「一键更新化妆师岗位.bat」也能更新。<br>
+    <b>点了 Run workflow 没反应？</b> 等几秒刷新页面，出现黄色「queued」圆点就是成功了。<br>
+    <b>令牌过期了怎么办？</b> 重新走第 2 步创建一个，替换旧的。</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var PAT_KEY = 'makeup_pat';
+  var saved = localStorage.getItem(PAT_KEY);
+  var patInput = document.getElementById('pat');
+  if (saved) { patInput.value = saved; }
+
+  function msg(el, text, cls) {
+    el.textContent = text;
+    el.className = 'tip ' + (cls || '');
+    el.classList.remove('hidden');
+  }
+
+  document.getElementById('savePat').addEventListener('click', function () {
+    var v = patInput.value.trim();
+    var el = document.getElementById('patMsg');
+    if (!v) { msg(el, '请先粘贴令牌', 'err'); return; }
+    localStorage.setItem(PAT_KEY, v);
+    msg(el, '✅ 令牌已保存！现在可以直接点下方「立即云端更新」', 'ok');
+  });
+
+  document.getElementById('goUpdate').addEventListener('click', function () {
+    var token = localStorage.getItem(PAT_KEY);
+    var el = document.getElementById('result');
+    if (!token) { msg(el, '还没有令牌：请先按第 2 步创建并保存，或改用第 1 步手动点 GitHub 按钮', 'err'); return; }
+    el.classList.remove('hidden');
+    el.textContent = '⏳ 正在启动云端更新…';
+    el.className = 'tip';
+    fetch('https://api.github.com/repos/Zhangheng0610-nb/makeup-jobs/actions/workflows/update.yml/dispatches', {
+      method: 'POST',
+      headers: {
+        'Authorization': 'Bearer ' + token,
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ ref: 'main' })
+    }).then(function (r) {
+      if (r.status === 204 || r.status === 202 || r.status === 201) {
+        msg(el, '✅ 更新已启动！约 10-30 分钟后刷新网站就能看到新岗位。30 分钟内重复点只会排队，不会跑多份。', 'ok');
+      } else if (r.status === 401) {
+        msg(el, '❌ 令牌无效或已过期：请重新走第 2 步创建一个新令牌并保存', 'err');
+      } else {
+        msg(el, '❌ 出错(' + r.status + ')：请换用第 1 步手动点 GitHub 按钮，或稍后重试', 'err');
+      }
+    }).catch(function () {
+      msg(el, '❌ 网络错误：请检查网络后重试，或换用第 1 步手动点 GitHub 按钮', 'err');
+    });
+  });
+})();
+</script>
+</body>
+</html>

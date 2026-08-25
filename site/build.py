@@ -441,7 +441,7 @@ def build_html(data: dict) -> str:
     <span class="stat-item">📅 {update_date} 更新</span>
     <span class="stat-item">🔄 奇数日自动更新</span>
   </div>
-  <div class="update-banner">📱 想立即更新？手机也能操作：<a href="https://github.com/Zhangheng0610-nb/makeup-jobs/actions/workflows/update.yml" target="_blank" rel="noopener">点此打开「Run workflow」按钮</a>（需登录 GitHub，云端自动跑扩大搜索更新，30分钟内连点只生效一次）</div>
+  <div class="update-banner">📱 想立即更新？<a href="update.html" target="_blank" rel="noopener">点这里查看「一键更新」说明</a>——手机上也能操作，云端自动跑扩大搜索更新，30分钟内连点只生效一次</div>
   <div class="summary">{summary_html}</div>
   <div class="filter-bar">
     <button data-tab="all" class="active">全部</button>
