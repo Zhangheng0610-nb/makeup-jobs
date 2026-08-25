@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💄 宁波化妆师招聘聚合 | 2026-08-25更新</title>
+<meta name="description" content="宁波本地化妆师/彩妆师/造型师/摄影岗位聚合，高端影楼优先，月入8K+达标标注，每两日更新。">
+<script>if(location.protocol==='http:'&&!location.hostname.startsWith('localhost')&&location.hostname!=='127.0.0.1')location.replace('https://'+location.host+location.pathname+location.search)</script>
+<meta property="og:title" content="宁波化妆师招聘聚合 | 2026-08-25更新">
+<meta property="og:description" content="宁波本地化妆师/摄影岗位聚合，月入8K+达标优先展示，共 18 个岗位">
+<meta property="og:url" content="https://makeup.zhangheng666.top/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="宁波化妆师招聘聚合">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://makeup.zhangheng666.top/">
+<style>
+:root {
+  --bg:#f8f6f3; --card:#ffffff; --text:#20232a; --muted:#6b7280;
+  --border:#e7e1d8; --accent:#d6336c; --accent-soft:#fce8f0;
+  --gold:#a16207; --gold-soft:#fbf3d9; --blue:#1d4ed8; --blue-soft:#e3edff;
+  --gray:#6b7280; --gray-soft:#f1f1f3; --red:#dc2626; --red-soft:#fdeaea;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:#17171c; --card:#1f1f26; --text:#eceaf0; --muted:#9b97a3;
+    --border:#2e2e38; --accent:#f06595; --accent-soft:#3a2230;
+    --gold:#e8c84a; --gold-soft:#38301a; --blue:#7cb0ff; --blue-soft:#1d2740;
+    --gray:#9b97a3; --gray-soft:#26262e; --red:#ff6b5b; --red-soft:#3a2222;
+  }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+header h1 { font-size: 1.6rem; margin-bottom: 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+.stats-bar { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 16px; }
+.stat-item {
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 6px 14px; font-size: .9rem; color: var(--muted);
+}
+.stat-item b { color: var(--text); }
+.summary {
+  background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent);
+  border-radius: 10px; padding: 12px 16px; font-size: .92rem; margin-bottom: 16px;
+}
+.filter-bar {
+  position: sticky; top: 0; z-index: 10; background: var(--bg);
+  padding: 10px 0; display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+  border-bottom: 1px solid var(--border); margin-bottom: 16px;
+}
+.filter-bar button {
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 999px; padding: 5px 14px; font-size: .85rem; cursor: pointer;
+}
+.filter-bar button.active {
+  background: var(--accent); border-color: var(--accent); color: #fff;
+}
+.filter-bar input, .filter-bar select {
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 999px; padding: 5px 14px; font-size: .85rem; outline: none;
+}
+.filter-bar input { flex: 1; min-width: 140px; }
+.filter-bar input:focus { border-color: var(--accent); }
+mark { background: #ffe066; color: #20232a; border-radius: 3px; padding: 0 1px; }
+.job-section { margin-bottom: 28px; }
+.job-section.hidden { display: none; }
+.section-title {
+  font-size: 1.15rem; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;
+}
+.count-badge {
+  background: var(--accent-soft); color: var(--accent); border-radius: 999px;
+  padding: 2px 10px; font-size: .8rem; font-weight: 600;
+}
+.job-item {
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.job-item.hidden { display: none; }
+.job-item.qualify-row { border-left: 4px solid var(--red); }
+.job-header { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.job-number { color: var(--muted); font-size: .8rem; }
+.job-title { font-weight: 600; font-size: .98rem; }
+.qualify-badge {
+  background: var(--red); color: #fff; border-radius: 999px;
+  padding: 1px 9px; font-size: .75rem; font-weight: 600; white-space: nowrap;
+}
+.new-badge {
+  background: var(--accent-soft); color: var(--accent); border-radius: 999px;
+  padding: 1px 9px; font-size: .75rem; white-space: nowrap;
+}
+.job-meta { display: flex; gap: 6px 14px; flex-wrap: wrap; margin-top: 8px; font-size: .88rem; color: var(--muted); }
+.job-meta .salary { color: var(--text); font-weight: 600; }
+.job-meta .est { color: var(--accent); font-weight: 600; font-size: .82rem; font-style: normal; }
+.tier { border-radius: 6px; padding: 0 7px; font-size: .8rem; font-weight: 500; }
+.tier-high { background: var(--gold-soft); color: var(--gold); }
+.tier-mid { background: var(--blue-soft); color: var(--blue); }
+.tier-low { background: var(--gray-soft); color: var(--gray); }
+.job-link { margin-top: 8px; font-size: .88rem; }
+.job-link a { color: var(--accent); text-decoration: none; word-break: break-all; }
+.job-link a:hover { text-decoration: underline; }
+.disclaimer {
+  background: var(--card); border: 1px dashed var(--border); border-radius: 10px;
+  padding: 10px 14px; font-size: .8rem; color: var(--muted); margin-top: 24px;
+}
+footer { margin-top: 16px; font-size: .8rem; color: var(--muted); text-align: center; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>💄 宁波化妆师招聘聚合</h1>
+    <p class="meta">2026-08-25 更新 ｜ 共 <b>18</b> 个岗位 ｜ ✅ 达标（月入8K+）<b>3</b> 个 ｜ 显示 <b id="stat-shown">18</b> 个 ｜ 达标 <b id="stat-shown-qualify">3</b> 个</p>
+  </header>
+  <div class="stats-bar">
+    <span class="stat-item">💼 总岗位 <b>18</b></span>
+    <span class="stat-item">✅ 达标8K+ <b>3</b></span>
+    <span class="stat-item">📅 2026-08-25 更新</span>
+    <span class="stat-item">🔄 奇数日自动更新</span>
+  </div>
+  <div class="summary"><p>本期收录 <strong>18</strong> 条宁波本地化妆/摄影岗位。✅ 达标 = 月入估算8K+（薪资区间中值或底薪+提成估算）。🆕 = 本期新增。<strong>高端影楼/公司优先展示。</strong> 数据来源：58同城、智联招聘、前程无忧、全职招聘网、店长直聘、黑光人才网、江东人才网等。</p></div>
+  <div class="filter-bar">
+    <button data-tab="all" class="active">全部</button>
+    <button data-tab="qualify">✅ 达标8K+</button>
+    <button data-tab="high">🏆 高端</button>
+    <button data-tab="mid">🥈 中端</button>
+    <button data-tab="low">⚙️ 低端</button>
+    <select id="region-filter"><option value="all">全部区域</option><option value="鄞州区">鄞州区</option><option value="海曙区">海曙区</option><option value="江北区">江北区</option><option value="镇海区">镇海区</option><option value="北仑区">北仑区</option><option value="慈溪">慈溪</option><option value="余姚">余姚</option><option value="宁海">宁海</option><option value="象山">象山</option></select>
+    <input id="kw-filter" type="search" placeholder="🔍 搜岗位/公司/关键词…" autocomplete="off">
+  </div>
+  <section class="job-section" id="sec-high">
+  <h2 class="section-title">🏆 高端 <span class="count-badge">2 岗</span></h2>
+  <div class="job-item qualify-row" data-tier="high" data-qualify="1" data-salary="11500" data-region="鄞州区" data-search="宁波柠壹摄影服务有限公司（鄞州龙湖天街） 写真化妆师（招8人） 月薪8000-15000 高端 鄞州区  ">
+  <div class="job-header">
+    <span class="job-number">#1</span>
+    <span class="job-title">宁波柠壹摄影服务有限公司（鄞州龙湖天街） — 写真化妆师（招8人）</span>
+    <span class="qualify-badge">✅ 达标8K+</span><span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪8000-15000 <em class="est">估月入约1.1万</em></span><span class="tier tier-high">🏆 高端</span><span>📍 鄞州区</span><span>🎓 不限，需3-5年写真/影楼化妆经验</span><span>📅 2026-08-20</span></div>
+  <div class="job-link"><a href="https://mhr.heiguang.com/xiezhenhuazhuangshi/ningbo/i_786959/" target="_blank" rel="noopener">🔗 黑光人才网岗位页</a></div>
+</div><div class="job-item qualify-row" data-tier="high" data-qualify="1" data-salary="8500" data-region="海曙区" data-search="宁波薇蒽希摄影有限公司（海曙都市仁和中心） 婚礼化妆师 月薪6000-11000（6k起） 高端 海曙区  ">
+  <div class="job-header">
+    <span class="job-number">#2</span>
+    <span class="job-title">宁波薇蒽希摄影有限公司（海曙都市仁和中心） — 婚礼化妆师</span>
+    <span class="qualify-badge">✅ 达标8K+</span><span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪6000-11000（6k起） <em class="est">估月入约8500元</em></span><span class="tier tier-high">🏆 高端</span><span>📍 海曙区</span><span>🎓 不限，3-5年婚礼化妆经验</span><span>📅 2026-02-10</span></div>
+  <div class="job-link"><a href="https://www.58.com/ppezx256137/" target="_blank" rel="noopener">🔗 58同城岗位页</a></div>
+</div>
+</section><section class="job-section" id="sec-mid">
+  <h2 class="section-title">🥈 中端 <span class="count-badge">9 岗</span></h2>
+  <div class="job-item qualify-row" data-tier="mid" data-qualify="1" data-salary="8000" data-region="海曙区" data-search="宁波晓鬼当佳儿童摄影（海曙丽园北路） 化妆师/引导师 月薪6000-10000，包吃包住 中端 海曙区  ">
+  <div class="job-header">
+    <span class="job-number">#3</span>
+    <span class="job-title">宁波晓鬼当佳儿童摄影（海曙丽园北路） — 化妆师/引导师</span>
+    <span class="qualify-badge">✅ 达标8K+</span><span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪6000-10000，包吃包住 <em class="est">估月入约8000元</em></span><span class="tier tier-mid">🥈 中端</span><span>📍 海曙区</span><span>🎓 不限，3年以上儿童摄影或影楼经验</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://m.58.com/nb/meirongjianshen/43286141835418x.shtml" target="_blank" rel="noopener">🔗 58同城岗位页</a></div>
+</div><div class="job-item" data-tier="mid" data-qualify="0" data-salary="7500" data-region="鄞州区" data-search="江苏鸿元盛景文化产业（鄞州百丈） 化妆师 月薪5000-10000 中端 鄞州区  ">
+  <div class="job-header">
+    <span class="job-number">#4</span>
+    <span class="job-title">江苏鸿元盛景文化产业（鄞州百丈） — 化妆师</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪5000-10000 <em class="est">估月入约7500元</em></span><span class="tier tier-mid">🥈 中端</span><span>📍 鄞州区</span><span>🎓 1-3年经验</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://www.zhaopin.com/zhaopin/4affe545aec0498b9ea6f9d08c0115fd/" target="_blank" rel="noopener">🔗 智联招聘搜索页</a></div>
+</div><div class="job-item" data-tier="mid" data-qualify="0" data-salary="6500" data-region="宁海" data-search="宁海阿兵摄影店（跃龙街道） 化妆师/化妆学徒 工资3000-10000，多劳多得有提成 中端 宁海  ">
+  <div class="job-header">
+    <span class="job-number">#11</span>
+    <span class="job-title">宁海阿兵摄影店（跃龙街道） — 化妆师/化妆学徒</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 工资3000-10000，多劳多得有提成 <em class="est">估月入约6500元</em></span><span class="tier tier-mid">🥈 中端</span><span>📍 宁海</span><span>🎓 不限，学历经验不限</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://job.nhzj.com/job/47504" target="_blank" rel="noopener">🔗 宁波招聘网岗位页</a></div>
+</div><div class="job-item" data-tier="mid" data-qualify="0" data-salary="6500" data-region="鄞州区" data-search="宁波爱你宝贝儿童摄影（江东） 化妆师 月薪5000-8000 中端 鄞州区  ">
+  <div class="job-header">
+    <span class="job-number">#7</span>
+    <span class="job-title">宁波爱你宝贝儿童摄影（江东） — 化妆师</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪5000-8000 <em class="est">估月入约6500元</em></span><span class="tier tier-mid">🥈 中端</span><span>📍 鄞州区</span><span>🎓 不限，应届毕业生可报；影楼或摄影工作室经验者优先</span><span>📅 2026-03-20</span></div>
+  <div class="job-link"><a href="http://www.nbjdrc.com/job25193960.shtml" target="_blank" rel="noopener">🔗 江东人才网岗位页</a></div>
+</div><div class="job-item" data-tier="mid" data-qualify="0" data-salary="6000" data-region="镇海区" data-search="宁波市镇海区骆驼维拉儿童摄影店 儿童影楼化妆师（招15人） 月薪4000-8000 中端 镇海区  ">
+  <div class="job-header">
+    <span class="job-number">#8</span>
+    <span class="job-title">宁波市镇海区骆驼维拉儿童摄影店 — 儿童影楼化妆师（招15人）</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪4000-8000 <em class="est">估月入约6000元</em></span><span class="tier tier-mid">🥈 中端</span><span>📍 镇海区</span><span>🎓 不限，学历经验不限；有成人化妆经验者优先</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://m.58.com/nb/meirongjianshen/64782188576018x.shtml" target="_blank" rel="noopener">🔗 58同城岗位页</a></div>
+</div><div class="job-item" data-tier="mid" data-qualify="0" data-salary="5500" data-region="慈溪" data-search="熊湾（宁波）文旅有限公司（慈溪） 化妆师 月薪5000-6000 中端 慈溪  ">
+  <div class="job-header">
+    <span class="job-number">#6</span>
+    <span class="job-title">熊湾（宁波）文旅有限公司（慈溪） — 化妆师</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪5000-6000 <em class="est">估月入约5500元</em></span><span class="tier tier-mid">🥈 中端</span><span>📍 慈溪</span><span>🎓 1年以上影楼/舞台剧/文旅景区/主题乐园化妆造型经验</span><span>📅 2026-08-10</span></div>
+  <div class="job-link"><a href="https://www.quanzhi.com/job/6a78a62ff87cf99210bc663b" target="_blank" rel="noopener">🔗 全职招聘网岗位页</a></div>
+</div><div class="job-item" data-tier="mid" data-qualify="0" data-salary="5000" data-region="江北区" data-search="宁波江北伍玥拾花摄摄影工作室（奥体中心附近） 化妆师 月薪4000-6000，底薪+提成 中端 江北区  ">
+  <div class="job-header">
+    <span class="job-number">#5</span>
+    <span class="job-title">宁波江北伍玥拾花摄摄影工作室（奥体中心附近） — 化妆师</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪4000-6000，底薪+提成 <em class="est">估月入约5000元</em></span><span class="tier tier-mid">🥈 中端</span><span>📍 江北区</span><span>🎓 要求成手，擅长各类写真妆造，需会汉服妆造；不招新手/助理</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://www.quanzhi.com/job/69a50e19fc45f4104928654c" target="_blank" rel="noopener">🔗 全职招聘网岗位页</a></div>
+</div><div class="job-item" data-tier="mid" data-qualify="0" data-salary="4000" data-region="海曙区" data-search="童新社儿童摄影（海曙启运路86号） 儿童化妆师（招2人） 月薪3000-5000+提成，提供食宿 中端 海曙区  ">
+  <div class="job-header">
+    <span class="job-number">#10</span>
+    <span class="job-title">童新社儿童摄影（海曙启运路86号） — 儿童化妆师（招2人）</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪3000-5000+提成，提供食宿 <em class="est">估月入约4000元</em></span><span class="tier tier-mid">🥈 中端</span><span>📍 海曙区</span><span>🎓 3年经验，限女性</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://mhr.heiguang.com/ertonghuazhuangshi/ningbo/i_755648/" target="_blank" rel="noopener">🔗 黑光人才网岗位页</a></div>
+</div><div class="job-item" data-tier="mid" data-qualify="0" data-salary="" data-region="鄞州区" data-search="宁波觉色摄影有限公司（鄞州嵩江中路） 化妆师 底薪加提成、保底工资 中端 鄞州区  ">
+  <div class="job-header">
+    <span class="job-number">#9</span>
+    <span class="job-title">宁波觉色摄影有限公司（鄞州嵩江中路） — 化妆师</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 底薪加提成、保底工资</span><span class="tier tier-mid">🥈 中端</span><span>📍 鄞州区</span><span>🎓 有影楼化妆、服饰搭配能力</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://www.zhaopin.com/jobdetail/CCL1392942610J40750275914.htm" target="_blank" rel="noopener">🔗 智联招聘岗位页</a></div>
+</div>
+</section><section class="job-section" id="sec-low">
+  <h2 class="section-title">⚙️ 低端 <span class="count-badge">7 岗</span></h2>
+  <div class="job-item" data-tier="low" data-qualify="0" data-salary="4500" data-region="海曙区" data-search="宁波薇蒽希摄影有限公司（海曙） 化妆助理 月薪3000-6000 低端 海曙区  ">
+  <div class="job-header">
+    <span class="job-number">#12</span>
+    <span class="job-title">宁波薇蒽希摄影有限公司（海曙） — 化妆助理</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪3000-6000 <em class="est">估月入约4500元</em></span><span class="tier tier-low">⚙️ 低端</span><span>📍 海曙区</span><span>🎓 不限，零基础小白、应届生可（18-28岁）</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://msearch.51job.com/jobs/ningbo-hsq/172473313.html" target="_blank" rel="noopener">🔗 前程无忧岗位页</a></div>
+</div><div class="job-item" data-tier="low" data-qualify="0" data-salary="4150" data-region="象山" data-search="象山鼠猩猩儿童摄影工作室（丹西街道） 化妆师/引导师 月薪3300-5000（有销售奖金） 低端 象山  ">
+  <div class="job-header">
+    <span class="job-number">#16</span>
+    <span class="job-title">象山鼠猩猩儿童摄影工作室（丹西街道） — 化妆师/引导师</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪3300-5000（有销售奖金） <em class="est">估月入约4150元</em></span><span class="tier tier-low">⚙️ 低端</span><span>📍 象山</span><span>🎓 不限，经验学历不限，可接受应届生</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://www.xsmpw.com/job/91857.html" target="_blank" rel="noopener">🔗 象山明聘岗位页</a></div>
+</div><div class="job-item" data-tier="low" data-qualify="0" data-salary="3500" data-region="余姚" data-search="余姚七色花儿童摄影 儿童化妆师 月薪3000-4000+提成 低端 余姚  ">
+  <div class="job-header">
+    <span class="job-number">#17</span>
+    <span class="job-title">余姚七色花儿童摄影 — 儿童化妆师</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪3000-4000+提成 <em class="est">估月入约3500元</em></span><span class="tier tier-low">⚙️ 低端</span><span>📍 余姚</span><span>🎓 不限</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://hr.7192.com/yinglou/ningbo" target="_blank" rel="noopener">🔗 全影人才网宁波站</a></div>
+</div><div class="job-item" data-tier="low" data-qualify="0" data-salary="3500" data-region="余姚" data-search="余姚市米花喜文化传媒有限公司（文山创意广场） 新娘跟妆化妆师（招1-5名） 月薪1000-6000 低端 余姚  ">
+  <div class="job-header">
+    <span class="job-number">#18</span>
+    <span class="job-title">余姚市米花喜文化传媒有限公司（文山创意广场） — 新娘跟妆化妆师（招1-5名）</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 月薪1000-6000 <em class="est">估月入约3500元</em></span><span class="tier tier-low">⚙️ 低端</span><span>📍 余姚</span><span>🎓 不限，要求有丰富跟妆经验</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://m.58.com/yuyao/meirongjianshen/65018535519509x.shtml" target="_blank" rel="noopener">🔗 58同城余姚岗位页</a></div>
+</div><div class="job-item" data-tier="low" data-qualify="0" data-salary="" data-region="海曙区" data-search="宁波时映摄影有限公司（海曙） 化妆助理（招2名） 面议 低端 海曙区  ">
+  <div class="job-header">
+    <span class="job-number">#13</span>
+    <span class="job-title">宁波时映摄影有限公司（海曙） — 化妆助理（招2名）</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 面议</span><span class="tier tier-low">⚙️ 低端</span><span>📍 海曙区</span><span>🎓 不限</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://b.dianzhangzhipin.com/storer/2021-0XJ73dy8FlpT.html" target="_blank" rel="noopener">🔗 店长直聘公司页</a></div>
+</div><div class="job-item" data-tier="low" data-qualify="0" data-salary="" data-region="海曙区" data-search="宁波即美婚纱摄影有限公司（海曙） 化妆助理（招3名）/摄影助理 面议 低端 海曙区  ">
+  <div class="job-header">
+    <span class="job-number">#14</span>
+    <span class="job-title">宁波即美婚纱摄影有限公司（海曙） — 化妆助理（招3名）/摄影助理</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 面议</span><span class="tier tier-low">⚙️ 低端</span><span>📍 海曙区</span><span>🎓 不限</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://b.dianzhangzhipin.com/store/2021-0HR82NS-FlNY.html" target="_blank" rel="noopener">🔗 店长直聘公司页</a></div>
+</div><div class="job-item" data-tier="low" data-qualify="0" data-salary="" data-region="北仑区" data-search="宁波北仑区风尚一站式婚礼艺术中心（晟道婚嫁产业集团） 化妆助理 面议 低端 北仑区  ">
+  <div class="job-header">
+    <span class="job-number">#15</span>
+    <span class="job-title">宁波北仑区风尚一站式婚礼艺术中心（晟道婚嫁产业集团） — 化妆助理</span>
+    <span class="new-badge">🆕 新增</span>
+  </div>
+  <div class="job-meta"><span class="salary">💰 面议</span><span class="tier tier-low">⚙️ 低端</span><span>📍 北仑区</span><span>🎓 不限</span><span>📅 2026-08-25</span></div>
+  <div class="job-link"><a href="https://www.quanzhi.com/job/6a1cf7ff1433e769ad5e9f57" target="_blank" rel="noopener">🔗 全职招聘网岗位页</a></div>
+</div>
+</section>
+  <div class="disclaimer">⚠️ 岗位信息均来自公开网络（58同城、BOSS直聘、智联招聘、前程无忧、全职招聘网、店长直聘、黑光人才网及公众号推文等），本站仅做聚合展示，薪资与岗位真实性请以原始发布为准。达标标注为薪资区间中值或底薪+提成的保守估算（月入≥8000元），实际收入以面试洽谈为准。</div>
+  <footer>
+    <a href="https://github.com/Zhangheng0610-nb/makeup-jobs">GitHub</a> ｜ 每两日更新 ｜ 适合有经验的化妆师/造型师/摄影师
+  </footer>
+</div>
+<script>
+const state = { tab: 'all', region: 'all', kw: '' };
+function escapeHtml(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+function apply() {
+  const kw = state.kw.trim().toLowerCase();
+  let shown = 0, shownQual = 0;
+  document.querySelectorAll('.job-item').forEach(card => {
+    const okTab = state.tab === 'all'
+      || (state.tab === 'qualify' && card.dataset.qualify === '1')
+      || card.dataset.tier === state.tab;
+    const okRegion = state.region === 'all' || card.dataset.region === state.region;
+    const okKw = !kw || card.dataset.search.includes(kw);
+    const show = okTab && okRegion && okKw;
+    card.classList.toggle('hidden', !show);
+    if (show) { shown++; if (card.dataset.qualify === '1') shownQual++; }
+  });
+  document.querySelectorAll('.job-section').forEach(sec => {
+    const any = Array.from(sec.querySelectorAll('.job-item')).some(c => !c.classList.contains('hidden'));
+    sec.classList.toggle('hidden', !any);
+  });
+  document.querySelectorAll('.filter-bar button').forEach(b =>
+    b.classList.toggle('active', b.dataset.tab === state.tab));
+  document.getElementById('stat-shown').textContent = shown;
+  document.getElementById('stat-shown-qualify').textContent = shownQual;
+  document.querySelectorAll('.job-title').forEach(el => {
+    const orig = el.dataset.orig || (el.dataset.orig = el.textContent);
+    if (kw && kw.length >= 2) {
+      const i = orig.toLowerCase().indexOf(kw);
+      if (i >= 0) {
+        el.innerHTML = escapeHtml(orig.slice(0, i)) + '<mark>' + escapeHtml(orig.slice(i, i + kw.length)) + '</mark>' + escapeHtml(orig.slice(i + kw.length));
+        return;
+      }
+    }
+    el.textContent = orig;
+  });
+}
+document.querySelectorAll('.filter-bar button').forEach(b =>
+  b.addEventListener('click', () => { state.tab = b.dataset.tab; apply(); }));
+document.getElementById('region-filter').addEventListener('change', e => { state.region = e.target.value; apply(); });
+let timer = null;
+document.getElementById('kw-filter').addEventListener('input', e => {
+  clearTimeout(timer);
+  timer = setTimeout(() => { state.kw = e.target.value; apply(); }, 200);
+});
+apply();
+</script>
+</body>
+</html>
