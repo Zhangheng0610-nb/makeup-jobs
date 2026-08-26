@@ -36,6 +36,13 @@
   <p class="sub">云端自动跑「扩大搜索」更新，找到更多宁波化妆师好岗位，大约 10-30 分钟完成。</p>
 
   <div class="card">
+    <h2>📊 现在是什么状态？点一下就知道</h2>
+    <button class="big-btn" id="goCheck" style="background:#00897b;">🔍 查看更新状态</button>
+    <div id="checkOut" class="tip hidden"></div>
+    <p class="small" style="margin-top:8px;">显示：网站现在几条岗位、最近一次更新几点 / 成功 / 失败。不用登录也能看。</p>
+  </div>
+
+  <div class="card">
     <h2><span class="num">1</span> 推荐：直接打开 GitHub 点按钮</h2>
     <a class="big-btn gh" href="https://github.com/Zhangheng0610-nb/makeup-jobs/actions/workflows/update.yml" target="_blank" rel="noopener">打开 GitHub 更新页面</a>
     <ol>
@@ -124,6 +131,71 @@
       }
     }).catch(function () {
       msg(el, '❌ 网络错误：请检查网络后重试，或换用第 1 步手动点 GitHub 按钮', 'err');
+    });
+  });
+
+  // 查更新状态（不用登录也能查：公开仓库）
+  document.getElementById('goCheck').addEventListener('click', function () {
+    var el = document.getElementById('checkOut');
+    el.classList.remove('hidden');
+    el.className = 'tip';
+    el.innerHTML = '⏳ 正在查询…';
+    var token = localStorage.getItem(PAT_KEY);
+    var headers = token
+      ? { 'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github+json' }
+      : { 'Accept': 'application/vnd.github+json' };
+    var siteN = null, siteDate = null;
+
+    var pSite = fetch('https://makeup.zhangheng666.top/').then(function (r) {
+      return r.text();
+    }).then(function (html) {
+      var m = html.match(/共 (\d+) 个岗位/);
+      if (m) { siteN = parseInt(m[1], 10); }
+      var d = html.match(/(20\d\d-\d\d-\d\d)更新/);
+      if (d) { siteDate = d[1]; }
+    }).catch(function () { /* 网站读取失败则忽略 */ });
+
+    var pRuns = fetch('https://api.github.com/repos/Zhangheng0610-nb/makeup-jobs/actions/runs?per_page=3', { headers: headers })
+      .then(function (r) { return r.json(); });
+
+    Promise.all([pSite, pRuns]).then(function (all) {
+      var runs = (all[1] && all[1].workflow_runs) || [];
+      var lines = [];
+      var latest = runs[0];
+      if (latest) {
+        if (latest.status === 'in_progress') { lines.push('🔄 <b>正在更新中</b>，跑完自动上线（约 5-20 分钟）'); }
+        else if (latest.conclusion === 'success') { lines.push('✅ <b>上次更新成功</b>' + (siteN > 0 ? '，网站岗位正常' : '')); }
+        else if (latest.conclusion === 'failure') { lines.push('⚠️ <b>上次更新失败</b>（常为最后回写仓库一步，不影响网站，可直接重新触发）'); }
+        else if (latest.conclusion === 'cancelled') { lines.push('⛔ <b>上次更新被取消</b>，可重新触发'); }
+      }
+      if (siteN === null) {
+        lines.push('🌐 网站：读取失败（可能网络异常），稍后重试');
+      } else {
+        lines.push('🌐 网站现在：<b>' + siteN + ' 条岗位</b>' + (siteDate ? '（' + siteDate + ' 更新）' : ''));
+      }
+      if (!runs.length) {
+        lines.push('⚙️ 云端还没有更新记录');
+      } else {
+        lines.push('⚙️ 最近 3 次云端更新：');
+        runs.forEach(function (r) {
+          var icon, desc;
+          if (r.status === 'in_progress') { icon = '🔄'; desc = '更新中'; }
+          else if (r.conclusion === 'success') { icon = '✅'; desc = '成功'; }
+          else if (r.conclusion === 'failure') { icon = '⚠️'; desc = '失败'; }
+          else if (r.conclusion === 'cancelled') { icon = '⛔'; desc = '取消'; }
+          else { icon = '❓'; desc = r.conclusion || r.status; }
+          var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+          var st = new Date(r.created_at);
+          var ts = pad(st.getHours()) + ':' + pad(st.getMinutes());
+          var en = new Date(r.updated_at);
+          if (r.status === 'completed' && en - st > 0) { ts += '→' + pad(en.getHours()) + ':' + pad(en.getMinutes()); }
+          lines.push(icon + ' <b>' + desc + '</b> ' + ts + '（run#' + String(r.id).slice(-7) + '）');
+        });
+        lines.push('<span class="small">点上方「🚀 立即云端更新」可随时再刷一次。</span>');
+      }
+      el.innerHTML = lines.join('<br>');
+    }).catch(function () {
+      msg(el, '❌ 查询失败：网络异常，请稍后重试', 'err');
     });
   });
 })();
