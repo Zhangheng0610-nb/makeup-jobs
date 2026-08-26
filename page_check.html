@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💄 宁波化妆师招聘聚合 | 2026-08-27更新</title>
+<meta name="description" content="宁波本地化妆师/彩妆师/造型师/摄影岗位聚合，高端影楼优先，月入8K+达标标注，每两日更新。">
+<script>if(location.protocol==='http:'&&!location.hostname.startsWith('localhost')&&location.hostname!=='127.0.0.1')location.replace('https://'+location.host+location.pathname+location.search)</script>
+<meta property="og:title" content="宁波化妆师招聘聚合 | 2026-08-27更新">
+<meta property="og:description" content="宁波本地化妆师/摄影岗位聚合，月入8K+达标优先展示，共 0 个岗位">
+<meta property="og:url" content="https://makeup.zhangheng666.top/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="宁波化妆师招聘聚合">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://makeup.zhangheng666.top/">
+<style>
+:root {
+  --bg:#f8f6f3; --card:#ffffff; --text:#20232a; --muted:#6b7280;
+  --border:#e7e1d8; --accent:#d6336c; --accent-soft:#fce8f0;
+  --gold:#a16207; --gold-soft:#fbf3d9; --blue:#1d4ed8; --blue-soft:#e3edff;
+  --gray:#6b7280; --gray-soft:#f1f1f3; --red:#dc2626; --red-soft:#fdeaea;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:#17171c; --card:#1f1f26; --text:#eceaf0; --muted:#9b97a3;
+    --border:#2e2e38; --accent:#f06595; --accent-soft:#3a2230;
+    --gold:#e8c84a; --gold-soft:#38301a; --blue:#7cb0ff; --blue-soft:#1d2740;
+    --gray:#9b97a3; --gray-soft:#26262e; --red:#ff6b5b; --red-soft:#3a2222;
+  }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+header h1 { font-size: 1.6rem; margin-bottom: 4px; }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 12px; }
+.stats-bar { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 16px; }
+.stat-item {
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 6px 14px; font-size: .9rem; color: var(--muted);
+}
+.stat-item b { color: var(--text); }
+.update-banner {
+  background: var(--card); border: 1px dashed var(--accent); border-radius: 10px;
+  padding: 10px 16px; font-size: .9rem; margin: 0 0 12px; color: var(--muted);
+}
+.update-banner a { color: var(--accent); font-weight: 600; }
+.summary {
+  background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent);
+  border-radius: 10px; padding: 12px 16px; font-size: .92rem; margin-bottom: 16px;
+}
+.filter-bar {
+  position: sticky; top: 0; z-index: 10; background: var(--bg);
+  padding: 10px 0; display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+  border-bottom: 1px solid var(--border); margin-bottom: 16px;
+}
+.filter-bar button {
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 999px; padding: 5px 14px; font-size: .85rem; cursor: pointer;
+}
+.filter-bar button.active {
+  background: var(--accent); border-color: var(--accent); color: #fff;
+}
+.filter-bar input, .filter-bar select {
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 999px; padding: 5px 14px; font-size: .85rem; outline: none;
+}
+.filter-bar input { flex: 1; min-width: 140px; }
+.filter-bar input:focus { border-color: var(--accent); }
+mark { background: #ffe066; color: #20232a; border-radius: 3px; padding: 0 1px; }
+.job-section { margin-bottom: 28px; }
+.job-section.hidden { display: none; }
+.section-title {
+  font-size: 1.15rem; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;
+}
+.count-badge {
+  background: var(--accent-soft); color: var(--accent); border-radius: 999px;
+  padding: 2px 10px; font-size: .8rem; font-weight: 600;
+}
+.job-item {
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.job-item.hidden { display: none; }
+.job-item.qualify-row { border-left: 4px solid var(--red); }
+.job-header { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.job-number { color: var(--muted); font-size: .8rem; }
+.job-title { font-weight: 600; font-size: .98rem; }
+.qualify-badge {
+  background: var(--red); color: #fff; border-radius: 999px;
+  padding: 1px 9px; font-size: .75rem; font-weight: 600; white-space: nowrap;
+}
+.new-badge {
+  background: var(--accent-soft); color: var(--accent); border-radius: 999px;
+  padding: 1px 9px; font-size: .75rem; white-space: nowrap;
+}
+.job-meta { display: flex; gap: 6px 14px; flex-wrap: wrap; margin-top: 8px; font-size: .88rem; color: var(--muted); }
+.job-meta .salary { color: var(--text); font-weight: 600; }
+.job-meta .est { color: var(--accent); font-weight: 600; font-size: .82rem; font-style: normal; }
+.tier { border-radius: 6px; padding: 0 7px; font-size: .8rem; font-weight: 500; }
+.tier-high { background: var(--gold-soft); color: var(--gold); }
+.tier-mid { background: var(--blue-soft); color: var(--blue); }
+.tier-low { background: var(--gray-soft); color: var(--gray); }
+.job-link { margin-top: 8px; font-size: .88rem; }
+.job-link a { color: var(--accent); text-decoration: none; word-break: break-all; }
+.job-link a:hover { text-decoration: underline; }
+.job-note { margin-top: 6px; font-size: .85rem; color: var(--text); background: var(--accent-soft); border-left: 3px solid var(--accent); padding: 5px 10px; border-radius: 4px; }
+.job-guide { margin-top: 6px; font-size: .85rem; color: var(--blue); background: var(--blue-soft); border-left: 3px solid var(--blue); padding: 5px 10px; border-radius: 4px; }
+.disclaimer {
+  background: var(--card); border: 1px dashed var(--border); border-radius: 10px;
+  padding: 10px 14px; font-size: .8rem; color: var(--muted); margin-top: 24px;
+}
+footer { margin-top: 16px; font-size: .8rem; color: var(--muted); text-align: center; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>💄 宁波化妆师招聘聚合</h1>
+    <p class="meta">2026-08-27 更新 ｜ 共 <b>0</b> 个岗位 ｜ ✅ 达标（月入8K+）<b>0</b> 个 ｜ 显示 <b id="stat-shown">0</b> 个 ｜ 达标 <b id="stat-shown-qualify">0</b> 个</p>
+  </header>
+  <div class="stats-bar">
+    <span class="stat-item">💼 总岗位 <b>0</b></span>
+    <span class="stat-item">✅ 达标8K+ <b>0</b></span>
+    <span class="stat-item">📅 2026-08-27 更新</span>
+    <span class="stat-item">🔄 奇数日自动更新</span>
+  </div>
+  <div class="update-banner">📱 想立即更新？<a href="update.html" target="_blank" rel="noopener">点这里查看「一键更新」说明</a>——手机上也能操作，云端自动跑扩大搜索更新，30分钟内连点只生效一次</div>
+  <div class="summary"><p>本期收录 <strong>60</strong> 条宁波本地化妆/摄影岗位。✅ 达标 = 月入估算8K+（薪资区间中值或底薪+提成估算）。<strong>高端影楼/公司优先展示。</strong> 数据来源：58同城、智联、前程无忧、全职招聘网、店长直聘、全影人才网、象山明聘、宁波美容人才网、猎聘、鱼泡直聘、小红书、抖音等。标注&quot;指路&quot;的条目为暂无有效直达链接、但可自行搜索的高薪/特色线索（含社交平台线索：小红书/抖音搜关键词即可，联系时注意核验）。</p><p>⚠️ 黑光人才网（heiguang.com）已停运（2026-08 实测确认）。原黑光独家发布的岗位已核实：9 家（柠壹、N_X、九月艺术、星卡、米乐、时尚凯地、哈喽贝比、金色童话化妆师岗、童新社）在其他平台查无在招记录，已删除；蜜芽/曾继盛 2 家已迁移他平台，保留并改真实指路。黑光网址请勿再访问。</p><p>🆕 本期新增 1 条（2026-08-27 搜索核验）：鱼泡直聘·宁波江北化妆师岗（零基础小白可，月结4000-7000）。上期 59 条岗位全部保留；猎聘&quot;迦境婚纱摄影&quot;岗位链接经本次搜索快照复核仍有效，其余链接沿用 2026-08-25 白名单复查结果。今日搜索后端多次返回噪声（区县词+平台词查询失效），仅&quot;宁波 影楼 招聘 化妆师&quot;等少数查询可用，故本次新增较少，宁缺毋滥。</p></div>
+  <div class="filter-bar">
+    <button data-tab="all" class="active">全部</button>
+    <button data-tab="qualify">✅ 达标8K+</button>
+    <button data-tab="high">🏆 高端</button>
+    <button data-tab="mid">🥈 中端</button>
+    <button data-tab="low">⚙️ 低端</button>
+    <select id="region-filter"><option value="all">全部区域</option></select>
+    <input id="kw-filter" type="search" placeholder="🔍 搜岗位/公司/关键词…" autocomplete="off">
+  </div>
+  
+  <div class="disclaimer">⚠️ 岗位信息均来自公开网络（58同城、BOSS直聘、智联招聘、前程无忧、全职招聘网、店长直聘、黑光人才网及公众号推文等），本站仅做聚合展示，薪资与岗位真实性请以原始发布为准。达标标注为薪资区间中值或底薪+提成的保守估算（月入≥8000元），实际收入以面试洽谈为准。</div>
+  <footer>
+    <a href="https://github.com/Zhangheng0610-nb/makeup-jobs">GitHub</a> ｜ 每两日更新 ｜ 适合有经验的化妆师/造型师/摄影师
+  </footer>
+</div>
+<script>
+const state = { tab: 'all', region: 'all', kw: '' };
+function escapeHtml(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+function apply() {
+  const kw = state.kw.trim().toLowerCase();
+  let shown = 0, shownQual = 0;
+  document.querySelectorAll('.job-item').forEach(card => {
+    const okTab = state.tab === 'all'
+      || (state.tab === 'qualify' && card.dataset.qualify === '1')
+      || card.dataset.tier === state.tab;
+    const okRegion = state.region === 'all' || card.dataset.region === state.region;
+    const okKw = !kw || card.dataset.search.includes(kw);
+    const show = okTab && okRegion && okKw;
+    card.classList.toggle('hidden', !show);
+    if (show) { shown++; if (card.dataset.qualify === '1') shownQual++; }
+  });
+  document.querySelectorAll('.job-section').forEach(sec => {
+    const any = Array.from(sec.querySelectorAll('.job-item')).some(c => !c.classList.contains('hidden'));
+    sec.classList.toggle('hidden', !any);
+  });
+  document.querySelectorAll('.filter-bar button').forEach(b =>
+    b.classList.toggle('active', b.dataset.tab === state.tab));
+  document.getElementById('stat-shown').textContent = shown;
+  document.getElementById('stat-shown-qualify').textContent = shownQual;
+  document.querySelectorAll('.job-title').forEach(el => {
+    const orig = el.dataset.orig || (el.dataset.orig = el.textContent);
+    if (kw && kw.length >= 2) {
+      const i = orig.toLowerCase().indexOf(kw);
+      if (i >= 0) {
+        el.innerHTML = escapeHtml(orig.slice(0, i)) + '<mark>' + escapeHtml(orig.slice(i, i + kw.length)) + '</mark>' + escapeHtml(orig.slice(i + kw.length));
+        return;
+      }
+    }
+    el.textContent = orig;
+  });
+}
+document.querySelectorAll('.filter-bar button').forEach(b =>
+  b.addEventListener('click', () => { state.tab = b.dataset.tab; apply(); }));
+document.getElementById('region-filter').addEventListener('change', e => { state.region = e.target.value; apply(); });
+let timer = null;
+document.getElementById('kw-filter').addEventListener('input', e => {
+  clearTimeout(timer);
+  timer = setTimeout(() => { state.kw = e.target.value; apply(); }, 200);
+});
+apply();
+</script>
+</body>
+</html>

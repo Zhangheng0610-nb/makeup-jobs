@@ -323,6 +323,16 @@ def write_file(path: str, content: str) -> str:
     try:
         p = Path(path)
         p.parent.mkdir(parents=True, exist_ok=True)
+        # 防截断校验：jobs.md 写入前检查岗位条目数，疑似输出截断时拒绝写入（保留上一版）
+        if p.resolve() == JOBS_MD.resolve():
+            import re
+            n = len(re.findall(r'^### \d+\.', content, re.M))
+            if n < 30:
+                return (f"ERROR: jobs.md 岗位条目过少({n}条)，疑似输出截断，未写入（保留原文件）。"
+                        f"请重新生成完整内容再 write_file")
+            m = re.search(r'本期收录[ **]*(\d+)', content)
+            if m and int(m.group(1)) != n:
+                return (f"WARN: 头部声明本期收录{int(m.group(1))}条，但实际条目{n}条，请先修正头部数字保持一致再写入")
         p.write_text(content, encoding='utf-8')
         return f"OK: wrote {len(content)} bytes to {path}"
     except Exception as e:
