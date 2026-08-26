@@ -229,6 +229,7 @@ header h1 { font-size: 1.6rem; margin-bottom: 4px; }
   background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent);
   border-radius: 10px; padding: 12px 16px; font-size: .92rem; margin-bottom: 16px;
 }
+.summary-src { color: var(--muted); font-size: .82rem; margin-top: 4px; }
 .filter-bar {
   position: sticky; top: 0; z-index: 10; background: var(--bg);
   padding: 10px 0; display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
@@ -391,7 +392,11 @@ def build_html(data: dict) -> str:
     items = data['items']
     total = len(items)
     qualified = sum(1 for it in items if it['qualify'])
-    summary_html = ''.join(f'<p>{md_inline(s)}</p>' for s in data['summary'])
+    summary_html = (
+        f'<p>本期收录 <b>{total}</b> 条宁波本地化妆/摄影岗位，高端影楼/公司优先展示；'
+        f'<b>✅ 达标</b> = 月入估算 8K+（薪资区间中值或底薪+提成）。</p>'
+        f'<p class="summary-src">数据来源：58同城、智联、前程无忧、店长直聘、全影人才网、象山明聘、小红书、抖音等。</p>'
+    )
 
     # 区域选项：常见区域排序靠前（'鄞州区'→按'鄞州'排序）
     def region_key(r):
@@ -433,15 +438,9 @@ def build_html(data: dict) -> str:
 <div class="wrap">
   <header>
     <h1>💄 宁波化妆师招聘聚合</h1>
-    <p class="meta">{update_date} 更新 ｜ 共 <b>{total}</b> 个岗位 ｜ ✅ 达标（月入8K+）<b>{qualified}</b> 个 ｜ 显示 <b id="stat-shown">{total}</b> 个 ｜ 达标 <b id="stat-shown-qualify">{qualified}</b> 个</p>
+    <p class="meta">📅 {update_date} ｜ 共 <b>{total}</b> 岗 ｜ ✅ 达标 <b>{qualified}</b> ｜ 筛出 <b id="stat-shown">{total}</b> / <b id="stat-shown-qualify">{qualified}</b></p>
   </header>
-  <div class="stats-bar">
-    <span class="stat-item">💼 总岗位 <b>{total}</b></span>
-    <span class="stat-item">✅ 达标8K+ <b>{qualified}</b></span>
-    <span class="stat-item">📅 {update_date} 更新</span>
-    <span class="stat-item">🔄 奇数日自动更新</span>
-  </div>
-  <div class="update-banner">📱 想立即更新？<a href="update.html" target="_blank" rel="noopener">点这里查看「一键更新」说明</a>——手机上也能操作，云端自动跑扩大搜索更新，30分钟内连点只生效一次</div>
+  <div class="update-banner">📱 要立即更新？<a href="update.html">点此一键更新</a>（手机上也能操作）</div>
   <div class="summary">{summary_html}</div>
   <div class="filter-bar">
     <button data-tab="all" class="active">全部</button>
@@ -453,7 +452,7 @@ def build_html(data: dict) -> str:
     <input id="kw-filter" type="search" placeholder="🔍 搜岗位/公司/关键词…" autocomplete="off">
   </div>
   {''.join(sections)}
-  <div class="disclaimer">⚠️ 岗位信息均来自公开网络（58同城、BOSS直聘、智联招聘、前程无忧、全职招聘网、店长直聘、黑光人才网及公众号推文等），本站仅做聚合展示，薪资与岗位真实性请以原始发布为准。达标标注为薪资区间中值或底薪+提成的保守估算（月入≥8000元），实际收入以面试洽谈为准。</div>
+  <div class="disclaimer">⚠️ 岗位来自公开网络，真实性与薪资请以原始发布为准；「达标」为薪资中值或底薪+提成的估算（月入≥8K），实际收入以面试为准。</div>
   <footer>
     <a href="{GH_REPO}">GitHub</a> ｜ 每两日更新 ｜ 适合有经验的化妆师/造型师/摄影师
   </footer>
