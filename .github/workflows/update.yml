@@ -58,7 +58,9 @@ jobs:
           git add -A
           if ! git diff --cached --quiet; then
             git commit -m "Update makeup jobs $(TZ=Asia/Shanghai date +%F)"
-            git push origin main
+            # 云端/本地可能都有提交：先 rebase 再 push；冲突或被拒不标红（部署已成功，回写尽力而为）
+            git pull --rebase origin main || echo "WARN: rebase 冲突，保留本地提交"
+            git push origin main || echo "WARN: push 被拒（远程领先），本次数据保留在 run 内，不影响已部署页面"
           else
             echo "No changes to commit"
           fi
