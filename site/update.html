@@ -165,7 +165,7 @@
       if (latest) {
         if (latest.status === 'in_progress') { lines.push('🔄 <b>正在更新中</b>，跑完自动上线（约 5-20 分钟）'); }
         else if (latest.conclusion === 'success') { lines.push('✅ <b>上次更新成功</b>' + (siteN > 0 ? '，网站岗位正常' : '')); }
-        else if (latest.conclusion === 'failure') { lines.push('⚠️ <b>上次更新失败</b>（常为最后回写仓库一步，不影响网站，可直接重新触发）'); }
+        else if (latest.conclusion === 'failure') { lines.push('⚠️ <b>上次更新失败</b>，网站保留上一版数据；请点「查看运行详情」查看具体原因，确认原因后再重试。'); }
         else if (latest.conclusion === 'cancelled') { lines.push('⛔ <b>上次更新被取消</b>，可重新触发'); }
       }
       if (siteN === null) {
