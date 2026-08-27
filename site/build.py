@@ -227,9 +227,9 @@ header h1 { font-size: 1.6rem; margin-bottom: 4px; }
 .update-banner a { color: var(--accent); font-weight: 600; }
 .summary {
   background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent);
-  border-radius: 10px; padding: 12px 16px; font-size: .92rem; margin-bottom: 16px;
+  border-radius: 10px; padding: 8px 12px; font-size: .86rem; margin-bottom: 12px;
 }
-.summary-src { color: var(--muted); font-size: .82rem; margin-top: 4px; }
+.summary-src { display: none; }
 .filter-bar {
   position: sticky; top: 0; z-index: 10; background: var(--bg);
   padding: 10px 0; display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
@@ -326,7 +326,7 @@ def render_card(it: dict) -> str:
         badges += '<span class="new-badge">🆕 新增</span>'
     title = f"{it['company']} — {it['position']}" if it['position'] else it['company']
 
-    return f'''<div class="job-item{" qualify-row" if it["qualify"] else ""}" data-tier="{it["tier_key"]}" data-qualify="{1 if it["qualify"] else 0}" data-salary="{it["est"] or ''}" data-region="{html_mod.escape(it["region"] or '宁波')}" data-search="{html_mod.escape(search_text)}">
+    return f'''<div class="job-item{" qualify-row" if it["qualify"] else ""}" data-tier="{it["tier_key"]}" data-qualify="{1 if it["qualify"] else 0}" data-direct="{1 if it["links"] else 0}" data-salary="{it["est"] or ''}" data-region="{html_mod.escape(it["region"] or '宁波')}" data-search="{html_mod.escape(search_text)}">
   <div class="job-header">
     <span class="job-number">#{it["number"]}</span>
     <span class="job-title">{html_mod.escape(title)}</span>
@@ -349,6 +349,7 @@ function apply() {
   document.querySelectorAll('.job-item').forEach(card => {
     const okTab = state.tab === 'all'
       || (state.tab === 'qualify' && card.dataset.qualify === '1')
+      || (state.tab === 'direct' && card.dataset.direct === '1')
       || card.dataset.tier === state.tab;
     const okRegion = state.region === 'all' || card.dataset.region === state.region;
     const okKw = !kw || card.dataset.search.includes(kw);
@@ -393,8 +394,7 @@ def build_html(data: dict) -> str:
     total = len(items)
     qualified = sum(1 for it in items if it['qualify'])
     summary_html = (
-        f'<p>本期收录 <b>{total}</b> 条宁波本地化妆/摄影岗位，高端影楼/公司优先展示；'
-        f'<b>✅ 达标</b> = 月入估算 8K+（薪资区间中值或底薪+提成）。</p>'
+        f'<p><b>{total}</b> 条岗位 · <b>✅ {qualified}</b> 条估算月入8K+ · 直链优先 · 仅收宁波</p>'
         f'<p class="summary-src">数据来源：58同城、智联、前程无忧、店长直聘、全影人才网、象山明聘、小红书、抖音等。</p>'
     )
 
@@ -438,13 +438,14 @@ def build_html(data: dict) -> str:
 <div class="wrap">
   <header>
     <h1>💄 宁波化妆师招聘聚合</h1>
-    <p class="meta">📅 {update_date} ｜ 共 <b>{total}</b> 岗 ｜ ✅ 达标 <b>{qualified}</b> ｜ 筛出 <b id="stat-shown">{total}</b> / <b id="stat-shown-qualify">{qualified}</b></p>
+    <p class="meta">📅 更新于 {update_date} · 筛选后 <b id="stat-shown">{total}</b> 岗 / 达标 <b id="stat-shown-qualify">{qualified}</b> 岗</p>
   </header>
-  <div class="update-banner">📱 要立即更新？<a href="update.html">点此一键更新</a>（手机上也能操作）</div>
+  <div class="update-banner">🧑‍💻 要更新岗位？<a href="update.html">查看运营说明</a>（现在由 Codex 人工核验）</div>
   <div class="summary">{summary_html}</div>
   <div class="filter-bar">
     <button data-tab="all" class="active">全部</button>
     <button data-tab="qualify">✅ 达标8K+</button>
+    <button data-tab="direct">🔗 有直链</button>
     <button data-tab="high">🏆 高端</button>
     <button data-tab="mid">🥈 中端</button>
     <button data-tab="low">⚙️ 低端</button>
