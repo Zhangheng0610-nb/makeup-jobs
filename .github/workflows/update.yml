@@ -28,13 +28,13 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install anthropic
+        run: pip install openai
 
       - name: Run makeup update (expanded search)
         env:
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          ANTHROPIC_BASE_URL: https://api.deepseek.com/anthropic
-          ANTHROPIC_MODEL: deepseek-v4-flash
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: https://api.openai.com/v1
+          OPENAI_MODEL: gpt-5.3-codex
           MAKEUP_BASE_DIR: ${{ github.workspace }}
           TZ: Asia/Shanghai
         run: python makeup_task.py makeup

@@ -9,7 +9,7 @@ import json, os, sys, subprocess, ctypes, re, html as html_mod, urllib.parse, ur
 from datetime import date
 from pathlib import Path
 
-import anthropic
+from openai import OpenAI
 
 # ── Stdout encoding ─────────────────────────────────────────────
 # Windows 重定向 stdout 时默认 GBK，⚠️/emoji 会抛 UnicodeEncodeError 直接崩
@@ -20,18 +20,16 @@ except Exception:
     pass
 
 # ── Config ────────────────────────────────────────────────────
-# Cloud (GitHub Actions) provides env vars; local Windows falls back to settings.json
-_api_key = os.environ.get('DEEPSEEK_API_KEY') or os.environ.get('ANTHROPIC_AUTH_TOKEN', '')
-_base_url = os.environ.get('ANTHROPIC_BASE_URL', '')
-_model = os.environ.get('ANTHROPIC_MODEL', '')
-if not _api_key or not _base_url:
+# Cloud (GitHub Actions) provides OpenAI env vars; local Windows falls back to settings.json
+_api_key = os.environ.get('OPENAI_API_KEY', '')
+_base_url = os.environ.get('OPENAI_BASE_URL', 'https://api.openai.com/v1')
+_model = os.environ.get('OPENAI_MODEL', 'gpt-5.3-codex')
+if not _api_key:
     SETTINGS_PATH = os.path.join(os.path.expanduser('~'), '.claude', 'settings.json')
     with open(SETTINGS_PATH) as f:
         settings = json.load(f)
     env = settings.get('env', {})
-    _api_key = _api_key or env.get('ANTHROPIC_AUTH_TOKEN', '')
-    _base_url = _base_url or env.get('ANTHROPIC_BASE_URL', '')
-    _model = _model or env.get('ANTHROPIC_MODEL', 'deepseek-v4-flash')
+    _api_key = env.get('OPENAI_API_KEY', '')
 
 API_KEY = _api_key
 BASE_URL = _base_url
@@ -60,7 +58,9 @@ TODAY_STR = TODAY.strftime('%Y-%m-%d')
 WEEKDAYS_CN = ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
 TODAY_WD = WEEKDAYS_CN[TODAY.weekday()]
 
-client = anthropic.Anthropic(api_key=API_KEY, base_url=BASE_URL)
+if not API_KEY:
+    raise RuntimeError('缺少 OPENAI_API_KEY；不会回退到 DeepSeek，请先配置 OpenAI API Key')
+client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
 
 # ── Single-instance lock ───────────────────────────────────────
 _mutex_handles = {}
@@ -508,50 +508,47 @@ def _run_loop(mode):
     mode_labels = {'makeup': '化妆师招聘'}
     label = mode_labels.get(mode, mode)
 
-    messages = [{"role": "user", "content": f"请执行{label}任务。按系统提示的步骤完成。先搜索，再读取参考文件，然后撰写、构建并发布。"}]
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": f"请执行{label}任务。按系统提示的步骤完成。先搜索，再读取参考文件，然后撰写、构建并发布。"},
+    ]
+    openai_tools = [{"type": "function", "function": {
+        "name": t["name"], "description": t["description"],
+        "parameters": t["input_schema"]
+    }} for t in TOOLS]
 
     for turn in range(55):
         print(f"\n{'='*50} [{label}] Turn {turn+1}/55")
 
-        resp = client.messages.create(
-            model=MODEL, max_tokens=8000,
-            system=system_prompt, tools=TOOLS, messages=messages)
-
-        assistant_content = []
-        tool_calls = []
-
-        for block in resp.content:
-            if block.type == 'text':
-                text = block.text
-                if text.strip():
-                    print(f"[TEXT] {text[:250]}{'...' if len(text)>250 else ''}")
-                assistant_content.append(block)
-            elif block.type == 'tool_use':
-                print(f"[TOOL] {block.name}: {json.dumps(block.input, ensure_ascii=False)[:200]}")
-                tool_calls.append(block)
-                assistant_content.append(block)  # must echo tool_use back, else tool_result has no matching tool_use
-            elif block.type == 'thinking':
-                assistant_content.append(block)
-
-        messages.append({"role": "assistant", "content": assistant_content})
+        resp = client.chat.completions.create(
+            model=MODEL, max_tokens=8000, tools=openai_tools, messages=messages)
+        msg = resp.choices[0].message
+        if msg.content and msg.content.strip():
+            print(f"[TEXT] {msg.content[:250]}{'...' if len(msg.content)>250 else ''}")
+        tool_calls = msg.tool_calls or []
+        messages.append({
+            "role": "assistant", "content": msg.content or None,
+            "tool_calls": [{"id": tc.id, "type": "function", "function": {
+                "name": tc.function.name, "arguments": tc.function.arguments
+            }} for tc in tool_calls]
+        })
 
         if not tool_calls:
             print(f"\n✅ {label}任务完成")
             break
 
-        tool_results = []
         for tc in tool_calls:
-            fn = TOOL_MAP.get(tc.name)
+            fn = TOOL_MAP.get(tc.function.name)
             try:
-                result = fn(**tc.input) if fn else f"Unknown: {tc.name}"
-                print(f"[RESULT] {tc.name}: {str(result)[:150]}")
+                args = json.loads(tc.function.arguments or '{}')
+                result = fn(**args) if fn else f"Unknown: {tc.function.name}"
+                print(f"[TOOL] {tc.function.name}: {json.dumps(args, ensure_ascii=False)[:200]}")
+                print(f"[RESULT] {tc.function.name}: {str(result)[:150]}")
             except Exception as e:
                 result = f"ERROR: {e}"
-            tool_results.append({"type": "tool_result", "tool_use_id": tc.id, "content": str(result)})
+            messages.append({"role": "tool", "tool_call_id": tc.id, "content": str(result)})
 
-        messages.append({"role": "user", "content": tool_results})
-
-        if turn >= 34:
+        if turn >= 54:
             print(f"\n⚠️ {label}到达最大轮次")
             break
 
