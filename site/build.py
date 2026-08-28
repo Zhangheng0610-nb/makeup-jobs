@@ -293,6 +293,26 @@ mark { background: #ffe066; color: #20232a; border-radius: 3px; padding: 0 1px; 
 }
 footer { margin-top: 16px; font-size: .8rem; color: var(--muted); text-align: center; }
 footer a { color: var(--muted); }
+@media (max-width: 600px) {
+  .wrap { padding: 14px 10px 32px; }
+  header h1 { font-size: 1.28rem; }
+  .meta { font-size: .82rem; margin-bottom: 8px; }
+  .stats-bar { margin: 8px 0 10px; }
+  .update-banner { padding: 8px 10px; font-size: .82rem; }
+  .summary { padding: 7px 10px; font-size: .82rem; margin-bottom: 8px; }
+  .filter-bar { padding: 7px 0; gap: 6px; margin-bottom: 12px; }
+  .filter-bar button { padding: 5px 10px; font-size: .78rem; }
+  .filter-bar input, .filter-bar select { padding: 5px 10px; font-size: .8rem; }
+  .filter-bar input { min-width: 120px; }
+  .job-section { margin-bottom: 20px; }
+  .section-title { font-size: 1.05rem; margin-bottom: 8px; }
+  .job-item { padding: 11px 12px; margin-bottom: 8px; border-radius: 10px; }
+  .job-title { font-size: .92rem; }
+  .job-meta { gap: 4px 9px; margin-top: 6px; font-size: .8rem; }
+  .job-link, .job-note, .job-guide { font-size: .8rem; }
+  .job-note, .job-guide { padding: 4px 8px; }
+  .disclaimer { margin-top: 16px; padding: 8px 10px; }
+}
 """
 
 def tier_icon(key: str) -> str:
