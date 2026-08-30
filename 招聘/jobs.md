@@ -37,6 +37,13 @@
 - 📅 **发布日期**：2026-02-10
 - 💡 主打婚纱/婚礼跟妆，09:00-17:30做六休一。⚠️ 注意：黑猫投诉平台有"招转培"投诉记录（以招聘名义诱导报名付费培训、办合约贷款，2025年5月），面试若要求交钱培训请立即走人
 - 📝 **指路**：58同城搜索"薇蒽希 化妆师"查看婚礼化妆师原帖
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 5. 海马体照相馆·宁波海曙印象城店（缦图摄影） — 化妆师
 - 🎓 **学历要求**：1年以上人像影楼/照相馆化妆经验（审美好可放宽至半年），需试妆
@@ -45,6 +52,13 @@
 - 🏷️ **档位**：高端
 - 💡 全国连锁"最美证件照"头部品牌，600+门店同步招聘、可内部调动，15号发薪，全职/签约双模式；品牌响亮适合刷履历
 - 📝 **指路**：塔塔网申 tatawangshen.com 搜"海马体"投宁波门店；招聘联系人徐来 13175570726（微信同号）可咨询宁波岗位
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 6. 慈溪爱肖肖婚纱摄影有限公司（慈溪康鑫梵石花园北门） — 化妆师（招1-2人）
 - 🎓 **学历要求**：3年以上专业化妆经验
@@ -55,6 +69,14 @@
 - 📝 **指路**：58同城慈溪频道搜索"爱肖肖婚纱摄影"查看原帖
 
 ## 🥈 中端
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
+
 ### 7. 宁波潮牌文化传媒（鄞州7号梦工场嘉鄞大厦） — 化妆师
 - 🎓 **学历要求**：不限，经验不限；有模特拍摄服务经验者优先
 - 📍 **区域**：鄞州区
@@ -78,6 +100,13 @@
 - 🏷️ **档位**：中端
 - 💡 形象设计公司岗位，上限1.2万
 - 📝 **指路**：猎聘宁波搜索"吉田形象设计"查看岗位
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 10. 化妆师（北仑新碶） — 化妆师
 - 🎓 **学历要求**：不限
@@ -86,6 +115,13 @@
 - 🏷️ **档位**：中端
 - 💡 北仑区高薪化妆岗
 - 📝 **指路**：58同城北仑频道搜索"化妆师"筛选新碶街道查看
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 11. 宁波市鄞州东钱湖蝶梦庭摄影馆（老街59号） — 化妆师
 - 🎓 **学历要求**：3年以上化妆经验，写真影楼经验优先；面试需交作品集+试妆
@@ -102,6 +138,13 @@
 - 🏷️ **档位**：中端
 - 💡 主要拍全家福、孕妇照、宝宝照，需掌握儿童及成人化妆发型技巧；08:30-17:30
 - 📝 **指路**：全影人才网搜索"蜜芽"（宁波市蜜芽摄影有限公司 2026-04 在招摄影师岗；原化妆师岗随黑光停运下架，是否再招待核）
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 13. 宁波晓鬼当佳儿童摄影（海曙丽园北路） — 化妆师/引导师
 - 🎓 **学历要求**：不限，3年以上儿童摄影或影楼经验
@@ -144,6 +187,13 @@
 - 📅 **发布日期**：2026-08-03
 - 💡 2026年8月最新更新，新鲜岗位
 - 📝 **指路**：猎聘宁波搜索"有肆无型"查看岗位
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 18. 余姚梵朵摄影有限责任公司（凤山） — 化妆师
 - 🎓 **学历要求**：不限
@@ -152,6 +202,13 @@
 - 🏷️ **档位**：中端
 - 💡 余姚本地高薪化妆岗
 - 📝 **指路**：58同城余姚频道搜索"梵朵摄影"查看原帖
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 19. 慈溪现代经典婚纱摄影楼（慈溪乌山路88号） — 化妆师/化妆主管/助理
 - 🎓 **学历要求**：面议
@@ -160,6 +217,13 @@
 - 🏷️ **档位**：中端
 - 💡 慈溪第一家影楼，18年老店，包吃住+饭补+住房补贴
 - 📝 **指路**：58同城慈溪频道/全影人才网搜索"现代经典婚纱"查看
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 20. 宁波金色童话儿童摄影（海曙天一广场国际购物中心4楼） — 儿童摄影师（招5人）
 - 🎓 **学历要求**：3年经验
@@ -216,6 +280,13 @@
 - 🏷️ **档位**：中端
 - 💡 儿童摄影+写真工作室，化妆/造型/服装方向；同店另招人像后期修图师4000-8000
 - 📝 **指路**：58同城搜索"大白家摄影工作室"查看化妆师岗位原帖
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 27. 余姚七色花儿童摄影（南雷南路388号） — 儿童化妆师
 - 🎓 **学历要求**：1年以上影楼化妆经验优先
@@ -273,6 +344,13 @@
 - 🏷️ **档位**：中端
 - 💡 五险一金+补充医疗+公积金，可住宿，转正就近安排
 - 📝 **指路**：前程无忧搜索"沄梦文化"查看岗位
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 34. 宁波有光摄影有限公司（海曙世纪广场305） — 摄影助理（提供吃住）
 - 🎓 **学历要求**：经验不限，会拍摄剪辑优先
@@ -289,6 +367,13 @@
 - 🏷️ **档位**：中端
 - 💡 包吃包住、年底双薪、周末双休、30天超长年假
 - 📝 **指路**：58同城搜索"星麦文化"查看岗位
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 36. 宁波北仑我的宝贝儿童摄影（北仑长江路880-886） — 儿童化妆师（招2人）
 - 🎓 **学历要求**：1年经验，限女性
@@ -297,6 +382,13 @@
 - 🏷️ **档位**：中端
 - 💡 提供食宿、年终奖、节日福利，早8晚5:30
 - 📝 **指路**：58同城北仑频道搜索"我的宝贝儿童摄影"查看
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 37. 宁波曾继盛文化传媒有限公司（鄞州创新128园区） — 写真化妆师（招1人）
 - 🎓 **学历要求**：2年经验，限女性
@@ -305,6 +397,13 @@
 - 🏷️ **档位**：中端
 - 💡 写真馆方向
 - 📝 **指路**：猎聘搜索"宁波曾继盛文化传媒有限公司"查看岗位（猎聘真实可搜，化妆师岗4-6k，宁波下应）
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 38. 宁波世纪繁荣旅游开发有限公司（宁海） — 化妆师
 - 🎓 **学历要求**：中专，1-2年经验，需古风/民族/舞台妆技能
@@ -313,6 +412,13 @@
 - 🏷️ **档位**：中端
 - 💡 景区演艺化妆，持高级化妆师证或特效妆优先
 - 📝 **指路**：前程无忧宁海站搜索"世纪繁荣"查看岗位
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 39. 宁波觉色摄影有限公司（鄞州嵩江中路） — 化妆师
 - 🎓 **学历要求**：有影楼化妆、服饰搭配能力
@@ -354,6 +460,13 @@
 - 🏷️ **档位**：低端
 - 💡 知名婚纱摄影品牌宁波旗舰店，社保+晋升+外出学习，客单价较高
 - 📝 **指路**：BOSS直聘搜索"大象映画"宁波（需登录，岗位信息可在搜索结果页查看）
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 44. 象山鼠猩猩儿童摄影工作室（丹西街道） — 化妆师/引导师
 - 🎓 **学历要求**：不限，经验学历不限，可接受应届生
@@ -386,6 +499,13 @@
 - 🏷️ **档位**：低端
 - 💡 招聘主体为广州科技公司（代婚纱摄影门店招人），岗位涉及影楼妆/婚礼妆/婚纱摄影妆造辅助、客户服务、造型物资管理；智联2026年8月快照显示海曙段塘与鄞州福明两门店同步在招；可新手，岗前培训
 - 📝 **指路**：智联招聘搜索"婚纱摄影化妆师助理 宁波"查看广州侬淇科技岗位原帖（海曙段塘岗直达链接见第48条）
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 48. 婚纱摄影化妆师助理（可新手，海曙区） — 化妆助理
 - 🎓 **学历要求**：经验学历不限
@@ -434,6 +554,13 @@
 - 🏷️ **档位**：低端
 - 💡 福利含月度绩效、节日福利、年终奖金、带薪年假；联系人崔女士；同公司另招造型师主管（剧场演艺方向）
 - 📝 **指路**：智联招聘搜索"鸿元盛景"直达岗位详情
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 54. 宁波江北伍玥拾花摄摄影工作室（奥体中心附近） — 化妆师
 - 🎓 **学历要求**：要求成手，擅长各类写真妆造，需会汉服妆造；不招新手/助理
@@ -459,6 +586,13 @@
 - 🏷️ **档位**：低端
 - 💡 新娘妆容设计，奉化本地
 - 📝 **指路**：58同城奉化频道搜索"慕纱婚纱"查看岗位
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 57. 宁海阿兵摄影店（跃龙街道） — 化妆师/化妆学徒
 - 🎓 **学历要求**：不限，学历经验不限
@@ -501,6 +635,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS站内搜索快照显示的高薪岗位；截至2026-08-30未获得公开岗位详情直链，需登录BOSS核实是否仍在招
 - 📝 **指路**：BOSS直聘 App 搜索“宁波海曙贰壹影像 高级化妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 62. 【待核验线索】宁波慕摄影 — 婚纱摄影师/化妆师/化妆主管
 - 🎓 **学历要求**：3-5年经验，学历不限
@@ -509,6 +650,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS站内搜索快照显示的复合岗位；暂无公开岗位详情直链，需登录BOSS核实具体招聘方向和提成规则
 - 📝 **指路**：BOSS直聘 App 搜索“宁波慕摄影 化妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 63. 【待核验线索】慈溪莎曼塔婚纱摄影 — 婚纱摄影化妆师
 - 🎓 **学历要求**：3-5年经验，学历不限
@@ -517,6 +665,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS站内搜索快照显示的高薪岗位；暂无公开岗位详情直链，需登录BOSS核实，勿向任何人缴纳培训费
 - 📝 **指路**：BOSS直聘 App 搜索“莎曼塔婚纱摄影 化妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 64. 【待核验线索】宁波因爱而生文化传播 — 婚纱摄影化妆师
 - 🎓 **学历要求**：3-5年经验，学历不限
@@ -525,6 +680,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS站内搜索快照显示的岗位；暂无公开岗位详情直链，需登录BOSS核实门店、底薪和提成规则
 - 📝 **指路**：BOSS直聘 App 搜索“因爱而生文化传播 化妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 65. 【待核验线索】宁波梵视文化发展 — 婚纱摄影化妆师
 - 🎓 **学历要求**：1-3年经验，学历不限
@@ -533,6 +695,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS站内搜索快照显示的岗位；暂无公开岗位详情直链，需登录BOSS核实公司和岗位状态
 - 📝 **指路**：BOSS直聘 App 搜索“宁波梵视文化发展 化妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 66. 【待核验线索】宁波慕谷摄影 — 婚纱化妆师
 - 🎓 **学历要求**：3-5年经验，学历不限
@@ -541,6 +710,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS站内搜索快照显示的岗位；暂无公开岗位详情直链，需登录BOSS核实具体门店和招聘状态
 - 📝 **指路**：BOSS直聘 App 搜索“宁波慕谷摄影 化妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 67. 宁波萌宝摄影有限公司（鄞州姜山） — 儿童摄影师
 - 🎓 **学历要求**：3-5年经验，学历不限
@@ -559,6 +735,13 @@
 - 📅 **发布日期**：2026-07-21（公司招聘页更新时间）
 - 💡 BOSS公司页显示为专业人像摄影企业，规模约100-499人，并有“高级化妆师”在招；暂无公开岗位详情直链，需登录BOSS核实底薪、提成和门店
 - 📝 **指路**：BOSS直聘 App 搜索“宁波鼎尖文化传播 高级化妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 69. 【待核验线索】慈溪市不晚婚纱店（慈溪浒山） — 婚礼跟妆师
 - 🎓 **学历要求**：3-5年经验，学历不限
@@ -567,6 +750,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS宁波婚礼跟妆搜索快照显示的在招岗位；暂无公开岗位详情直链，需登录BOSS核实是否仍在招及提成规则
 - 📝 **指路**：BOSS直聘 App 搜索“慈溪市不晚婚纱店 婚礼跟妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 70. 【待核验线索】宁波山遇川文化艺术（鄞州下应） — 婚纱化妆师
 - 🎓 **学历要求**：1-3年经验，学历不限
@@ -575,6 +765,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS宁波婚纱摄影化妆师搜索快照显示的岗位；暂无公开岗位详情直链，需登录BOSS核实公司、客单价和薪资构成
 - 📝 **指路**：BOSS直聘 App 搜索“宁波山遇川文化艺术 婚纱化妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 71. 【待核验线索】夏木视觉（鄞州东钱湖） — 旅拍/写真化妆师
 - 🎓 **学历要求**：1-3年经验，大专优先
@@ -583,6 +780,13 @@
 - 🏷️ **档位**：中端
 - 💡 BOSS宁波摄影招聘搜索快照显示的视觉摄影岗位线索；暂无公开岗位详情直链，需登录BOSS核实是否招聘化妆师以及具体工作内容
 - 📝 **指路**：BOSS直聘 App 搜索“夏木视觉 宁波 化妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 72. 【待核验线索】宁波奥斯卡婚纱摄影（慈溪浒山） — 婚纱摄影化妆师
 - 🎓 **学历要求**：1-3年经验，大专优先
@@ -591,6 +795,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS宁波婚纱摄影化妆师搜索快照显示的岗位线索；该品牌在宁波婚礼摄影市场有一定知名度，但暂无公开岗位详情直链，需登录BOSS核实当前状态
 - 📝 **指路**：BOSS直聘 App 搜索“宁波奥斯卡婚纱摄影 化妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 73. 【待核验线索】奉化ING岸集婚纱礼服高级定制（奉化岳林） — 婚礼化妆师
 - 🎓 **学历要求**：1-3年经验，具体以BOSS页面为准
@@ -599,6 +810,13 @@
 - 🏷️ **档位**：中端
 - 💡 BOSS宁波婚纱摄影化妆师搜索快照显示的婚纱礼服馆岗位；暂无公开岗位详情直链，需登录BOSS核实底薪、提成和是否仍在招
 - 📝 **指路**：BOSS直聘 App 搜索“奉化ING岸集 婚礼化妆师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 74. 【待核验线索】至尚映画（鄞州汽车东站） — 摄影师
 - 🎓 **学历要求**：大专，在校/应届可，需有一定摄影基础
@@ -607,6 +825,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS摄影师搜索快照显示的摄影岗位，偏短视频、产品视频、企业宣传片；会化妆且能兼摄影者可重点沟通
 - 📝 **指路**：BOSS直聘 App 搜索“至尚映画 摄影师 宁波”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 75. 【待核验线索】大象映画宁波旗舰店（鄞州印象城） — 摄影师
 - 🎓 **学历要求**：3-5年经验，学历不限
@@ -615,6 +840,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS摄影师搜索快照显示的独立摄影岗，与本站已有大象映画化妆/摄影化妆助理线索为同一品牌；暂无公开岗位详情直链
 - 📝 **指路**：BOSS直聘 App 搜索“大象映画宁波旗舰店 摄影师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 76. 【待核验线索】慕谷摄影（鄞州下应） — 婚纱摄影师
 - 🎓 **学历要求**：1-3年经验，学历不限
@@ -623,6 +855,13 @@
 - 🏷️ **档位**：高端
 - 💡 BOSS摄影师搜索快照显示的婚纱摄影岗；与本站已有慕谷婚纱化妆师线索可同时核实，适合化妆+摄影复合发展
 - 📝 **指路**：BOSS直聘 App 搜索“慕谷摄影 婚纱摄影师 宁波”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 77. 【待核验线索】宁波画意摄影服务（鄞州东钱湖） — 旅拍摄影师
 - 🎓 **学历要求**：大专，1-3年经验，需2年以上人像摄影对客经验
@@ -631,6 +870,13 @@
 - 🏷️ **档位**：中端
 - 💡 BOSS摄影师搜索快照显示的旅拍人像岗位，强调服务过程和自带设备；化妆+人像摄影复合技能有匹配度
 - 📝 **指路**：BOSS直聘 App 搜索“宁波画意摄影服务 旅拍摄影师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 78. 【待核验线索】贝影文化艺术（鄞州钟公庙） — 儿童摄影师/摄影师助理
 - 🎓 **学历要求**：经验不限，学历不限，有相关经验优先
@@ -639,6 +885,13 @@
 - 🏷️ **档位**：中端
 - 💡 BOSS摄影师搜索快照显示的儿童摄影岗位；岗位同时覆盖摄影师和摄影师助理，适合先以复合岗切入
 - 📝 **指路**：BOSS直聘 App 搜索“贝影文化艺术 儿童摄影师 宁波”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 79. 【待核验线索】宁波知其文化传媒（鄞州印象城） — 摄影师
 - 🎓 **学历要求**：1-3年经验，学历不限
@@ -647,6 +900,13 @@
 - 🏷️ **档位**：中端
 - 💡 BOSS摄影师搜索快照显示的婚礼/婚纱摄影岗，要求自备摄影器材；会妆造可争取复合岗位
 - 📝 **指路**：BOSS直聘 App 搜索“宁波知其文化传媒 摄影师”
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 80. 【待核验线索】象山史伦德摄影工作室（象山丹东） — 摄影工作室化妆师
 - 🎓 **学历要求**：3-5年经验，学历不限
@@ -674,3 +934,11 @@
 | 海曙区/鄞州区（双区） | 1 |
 
 *本栏目由 AI 采集编撰 | 2026-08-30 | 岗位真实性与薪资请以原始发布为准*
+- 🔎 **verification_status**：pending
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T23:20:29+0800
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
+
