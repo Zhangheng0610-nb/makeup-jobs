@@ -452,7 +452,10 @@ def verify_entry(entry: dict) -> dict:
         scored.append(score_candidate(entry, candidate, detail))
     scored.sort(key=lambda x: (x["score"], x["evidence"]["company_match"], x["evidence"]["title_match"]), reverse=True)
 
-    best = scored[0] if scored else {
+    # Copy the best record before attaching all_candidates.  Otherwise the
+    # first element would contain a reference to itself and JSON logging
+    # would fail with "Circular reference detected" when a candidate exists.
+    best = dict(scored[0]) if scored else {
         "status": "pending", "source": "", "verification_url": "", "direct_url": "", "score": 0,
         "evidence": {"company_match": False, "title_match": False, "location_match": False, "salary_match": False, "experience_education_match": False, "current_page": False, "score": 0},
         "error": "搜索渠道没有返回可用候选结果", "candidate": {}, "detail": {},
@@ -546,6 +549,9 @@ def self_test() -> int:
     assert scored["score"] <= 100
     boss = {"url": "https://www.zhipin.com/job_detail/abc123.html", "title": "", "snippet": ""}
     assert extract_job_detail_url(boss).endswith("/job_detail/abc123.html")
+    copied = dict(scored)
+    copied["all_candidates"] = [scored]
+    json.dumps(copied, ensure_ascii=False)
     out("SELF_TEST_OK")
     return 0
 
