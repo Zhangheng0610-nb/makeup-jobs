@@ -51,7 +51,11 @@ def main() -> None:
     if stated and int(stated.group(1)) != len(entries):
         fail(f"头部声明 {stated.group(1)} 条，实际 {len(entries)} 条")
 
-    urls = re.findall(r"https?://[^)\s]+", text)
+    # Only Markdown 🔗 links are application/direct links.  Verification
+    # evidence fields may legitimately point to a BOSS search/detail page and
+    # must not silently become application links.
+    urls = re.findall(r"(?m)^-\s*🔗\s*\[[^]]+\]\((https?://[^)\s]+)\)", text)
+    evidence_urls = re.findall(r"(?m)^-\s*(?:🌐\s*)?(?:🔗\s*)?\*\*(?:verification_url|direct_url)\*\*\s*[：:]\s*(https?://\S+)", text)
     seen = set()
     for url in urls:
         if any(bad in url.lower() for bad in FORBIDDEN):
@@ -61,6 +65,27 @@ def main() -> None:
         seen.add(url)
         if not ALLOWED.fullmatch(url.rstrip(".,")):
             fail(f"链接不符合岗位直链规则: {url}")
+    for url in evidence_urls:
+        if ".gov.cn" in url.lower() or "heiguang.com" in url.lower():
+            fail(f"核验字段发现禁止链接: {url}")
+
+    statuses = {"verified", "located", "weak_verified", "pending"}
+    status_lines = re.findall(r"(?m)^-\s*🔎\s*\*\*verification_status\*\*\s*[：:]\s*(\S+)", text)
+    for value in status_lines:
+        if value not in statuses:
+            fail(f"未知核验状态: {value}")
+    score_lines = re.findall(r"(?m)^-\s*📊\s*\*\*verification_score\*\*\s*[：:]\s*(\d+)", text)
+    if any(int(x) > 100 for x in score_lines):
+        fail("核验分数超过100")
+
+    log = ROOT / "data" / "verification-log.json"
+    if log.exists():
+        try:
+            value = __import__("json").loads(log.read_text(encoding="utf-8"))
+            if not isinstance(value, list):
+                fail("verification-log.json 必须是数组")
+        except Exception as exc:
+            fail(f"verification-log.json 无法解析: {exc}")
 
     if not INDEX.exists():
         fail("site/index.html 不存在")
