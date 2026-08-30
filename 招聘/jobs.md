@@ -38,12 +38,12 @@
 - 💡 主打婚纱/婚礼跟妆，09:00-17:30做六休一。⚠️ 注意：黑猫投诉平台有"招转培"投诉记录（以招聘名义诱导报名付费培训、办合约贷款，2025年5月），面试若要求交钱培训请立即走人
 - 📝 **指路**：58同城搜索"薇蒽希 化妆师"查看婚礼化妆师原帖
 - 🔎 **verification_status**：pending
-- 🧭 **verification_source**：BOSS直聘
-- 🌐 **verification_url**：https://html.duckduckgo.com/html/?q=%22%E5%AE%81%E6%B3%A2%E8%96%87%E8%92%BD%E5%B8%8C%E6%91%84%E5%BD%B1%22%20%E5%8C%96%E5%A6%86%E5%B8%88%20%E6%8B%9B%E8%81%98
-- 📊 **verification_score**：30
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
-- 🧾 **verification_evidence**：{"company_match":true,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":30}
-- ⚠️ **verification_error**：未找到同时匹配公司和岗位的当前招聘记录
+- 🧭 **verification_source**：未找到
+- 🌐 **verification_url**：
+- 📊 **verification_score**：0
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
+- 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
+- ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
 ### 5. 海马体照相馆·宁波海曙印象城店（缦图摄影） — 化妆师
 - 🎓 **学历要求**：1年以上人像影楼/照相馆化妆经验（审美好可放宽至半年），需试妆
@@ -56,7 +56,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -73,7 +73,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -104,7 +104,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -119,7 +119,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -142,7 +142,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -191,7 +191,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -206,7 +206,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -221,7 +221,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -284,7 +284,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -348,7 +348,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -371,7 +371,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -386,7 +386,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -401,7 +401,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -416,7 +416,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -464,7 +464,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -503,7 +503,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -558,7 +558,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -590,7 +590,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -639,7 +639,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -654,7 +654,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -669,7 +669,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -684,7 +684,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -699,7 +699,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -714,7 +714,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -739,7 +739,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -754,7 +754,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -769,7 +769,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -784,7 +784,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -799,7 +799,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -814,7 +814,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -829,7 +829,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -844,7 +844,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -859,7 +859,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -874,7 +874,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -889,7 +889,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -904,7 +904,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
@@ -938,7 +938,7 @@
 - 🧭 **verification_source**：未找到
 - 🌐 **verification_url**：
 - 📊 **verification_score**：0
-- 📅 **verified_at**：2026-08-30T15:51:45+0000
+- 📅 **verified_at**：2026-08-30T15:58:33+0000
 - 🧾 **verification_evidence**：{"company_match":false,"title_match":false,"location_match":false,"salary_match":false,"experience_education_match":false,"current_page":false,"score":0}
 - ⚠️ **verification_error**：搜索渠道没有返回可用候选结果
 
