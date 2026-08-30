@@ -305,7 +305,8 @@ def parse_entries(text: str) -> list[dict]:
         links = re.findall(r"(?m)^-\s*🔗\s*\[[^]]+\]\((https?://[^)]+)\)", block)
         status = fields.get("verification_status", "").strip().lower()
         has_marker = "待核验" in block or "无直链" in block
-        needs = status == "pending" or not links or has_marker
+        has_direct_field = bool(fields.get("direct_url", "").strip())
+        needs = status == "pending" or (not links and not has_direct_field) or has_marker
         entries.append({
             "number": int(match.group(1)), "block": block, "company": company, "position": position,
             "fields": fields, "links": links, "needs": needs,
@@ -371,6 +372,7 @@ def score_candidate(entry: dict, candidate: dict, detail: dict | None) -> dict:
     body = detail.get("body", "") if detail else ""
     blocked = any(w in clean_text(body[:50000]) for w in BLOCK_WORDS)
     stale = any(w in clean_text(body[:50000]) for w in STALE_WORDS)
+    page_gone = bool(detail and detail.get("status", 0) in (404, 410))
     current_score = 5 if page_exists and not stale else 0
     score = company_score + title_score + location_score + salary_score + exp_score + current_score
     detail_match = bool(detail and company_match and title_score >= 15 and not blocked and not stale)
@@ -389,19 +391,21 @@ def score_candidate(entry: dict, candidate: dict, detail: dict | None) -> dict:
     else:
         status = "pending"
 
+    state = "possibly_closed" if stale or page_gone else ("active" if page_exists else "")
     error = ""
     if status == "pending":
         error = "未找到同时匹配公司和岗位的当前招聘记录"
     elif blocked:
         error = "详情页触发登录/安全验证，未尝试绕过；保留公开搜索证据"
-    elif stale:
-        error = "候选页面显示岗位可能已失效"
+    if stale or page_gone:
+        error = "候选页面显示岗位可能已失效，已保留并标记 possibly_closed"
 
     return {
         "status": status, "source": source_label, "source_key": source_key,
         "verification_url": candidate.get("search_url") or candidate.get("url", ""),
         "direct_url": direct_url,
         "score": score,
+        "state": state,
         "evidence": {
             "company_match": company_score >= 30,
             "title_match": title_score >= 15,
@@ -457,6 +461,7 @@ def verify_entry(entry: dict) -> dict:
     # would fail with "Circular reference detected" when a candidate exists.
     best = dict(scored[0]) if scored else {
         "status": "pending", "source": "", "verification_url": "", "direct_url": "", "score": 0,
+        "state": "",
         "evidence": {"company_match": False, "title_match": False, "location_match": False, "salary_match": False, "experience_education_match": False, "current_page": False, "score": 0},
         "error": "搜索渠道没有返回可用候选结果", "candidate": {}, "detail": {},
     }
@@ -482,8 +487,9 @@ def due(entry: dict, today: date) -> bool:
 
 
 VERIFICATION_KEYS = {
-    "verification_status", "verification_source", "verification_url", "verification_score",
-    "verified_at", "verification_evidence", "verification_error", "direct_url",
+        "verification_status", "verification_source", "verification_url", "verification_score",
+        "verified_at", "verification_evidence", "verification_error", "direct_url",
+        "verification_state",
 }
 
 
@@ -495,6 +501,7 @@ def upsert_verification_fields(block: str, result: dict, now: str) -> str:
         f'- 🧭 **verification_source**：{result.get("source", "") or "未找到"}',
         f'- 🌐 **verification_url**：{result.get("verification_url", "") or ""}',
         f'- 📊 **verification_score**：{result.get("score", 0)}',
+        f'- 🧩 **verification_state**：{result.get("state", "") or ""}',
         f'- 📅 **verified_at**：{now}',
         f'- 🧾 **verification_evidence**：{json.dumps(result.get("evidence", {}), ensure_ascii=False, separators=(",", ":"))}',
         f'- ⚠️ **verification_error**：{result.get("error", "") or ""}',
@@ -590,6 +597,7 @@ def main() -> int:
             "final_status": result["status"], "verification_source": result.get("source", ""),
             "verification_url": result.get("verification_url", ""), "direct_url": result.get("direct_url", ""),
             "evidence": result.get("evidence", {}), "error": result.get("error", ""),
+            "verification_state": result.get("state", ""),
         })
         out(f"    -> {result['status']} score={result.get('score', 0)} candidates={result.get('candidates_found', 0)}")
     if args.apply and results:
