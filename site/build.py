@@ -183,9 +183,11 @@ def parse_jobs(md_file: Path) -> dict:
         except Exception:
             it['date_ord'] = update_date.toordinal()
 
-    # 排序：达标优先 → 估算月入降序 → 发布日期新 → 序号
-    items.sort(key=lambda x: (0 if x['qualify'] else 1, -(x['est'] or -1),
-                              -x['date_ord'], x['number']))
+    # 排序：达标优先 → 有直链优先 → 估算月入降序 → 发布日期新 → 序号
+    items.sort(key=lambda x: (
+        0 if x['qualify'] else 1,
+        1 if ('待核验' in x['company'] or (x['guide'] and not x['links'])) else 0,
+        -(x['est'] or -1), -x['date_ord'], x['number']))
     return {'update_date': update_date, 'summary': summary, 'items': items}
 
 # ── 渲染 ──────────────────────────────────────────────────────
@@ -271,6 +273,10 @@ mark { background: #ffe066; color: #20232a; border-radius: 3px; padding: 0 1px; 
   background: var(--red); color: #fff; border-radius: 999px;
   padding: 1px 9px; font-size: .75rem; font-weight: 600; white-space: nowrap;
 }
+.guide-badge {
+  background: #fff1d6; color: #a15c00; border-radius: 999px;
+  padding: 1px 9px; font-size: .75rem; font-weight: 600; white-space: nowrap;
+}
 .new-badge {
   background: var(--accent-soft); color: var(--accent); border-radius: 999px;
   padding: 1px 9px; font-size: .75rem; white-space: nowrap;
@@ -342,6 +348,8 @@ def render_card(it: dict) -> str:
     badges = ''
     if it['qualify']:
         badges += '<span class="qualify-badge">✅ 达标8K+</span>'
+    if '待核验' in it['company'] or (it['guide'] and not it['links']):
+        badges += '<span class="guide-badge">🧭 待核验</span>'
     if it['is_new']:
         badges += '<span class="new-badge">🆕 新增</span>'
     title = f"{it['company']} — {it['position']}" if it['position'] else it['company']
@@ -350,12 +358,12 @@ def render_card(it: dict) -> str:
   <div class="job-header">
     <span class="job-number">#{it["number"]}</span>
     <span class="job-title">{html_mod.escape(title)}</span>
-    {badges}
+{badges}
   </div>
   <div class="job-meta">{''.join(meta)}</div>
   <div class="job-link">{links}</div>
-  {note}
-  {guide}
+{note}
+{guide}
 </div>'''
 
 JS = """
@@ -413,8 +421,10 @@ def build_html(data: dict) -> str:
     items = data['items']
     total = len(items)
     qualified = sum(1 for it in items if it['qualify'])
+    leads = sum(1 for it in items if '待核验' in it['company'] or (it['guide'] and not it['links']))
+    verified = total - leads
     summary_html = (
-        f'<p><b>{total}</b> 条岗位 · <b>✅ {qualified}</b> 条估算月入8K+ · 直链优先 · 仅收宁波</p>'
+        f'<p><b>{verified}</b> 条已核验岗位 · <b>{leads}</b> 条待核验线索 · <b>✅ {qualified}</b> 条估算月入8K+ · 仅收宁波</p>'
         f'<p class="summary-src">数据来源：58同城、智联、前程无忧、店长直聘、全影人才网、象山明聘、小红书、抖音等。</p>'
     )
 
@@ -458,7 +468,7 @@ def build_html(data: dict) -> str:
 <div class="wrap">
   <header>
     <h1>💄 宁波化妆师招聘聚合</h1>
-    <p class="meta">📅 更新于 {update_date} · 筛选后 <b id="stat-shown">{total}</b> 岗 / 达标 <b id="stat-shown-qualify">{qualified}</b> 岗</p>
+    <p class="meta">📅 更新于 {update_date} · 共 <b>{total}</b> 条 · 已核验 <b>{verified}</b> · 待核验 <b>{leads}</b> · 达标 <b id="stat-shown-qualify">{qualified}</b></p>
   </header>
   <div class="update-banner">🧑‍💻 要更新岗位？<a href="update.html">查看运营说明</a>（现在由 Codex 人工核验）</div>
   <div class="summary">{summary_html}</div>
