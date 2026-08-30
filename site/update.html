@@ -33,7 +33,7 @@
 <body>
 <div class="wrap">
   <h1>📱 一键更新</h1>
-  <p class="sub">云端自动跑「扩大搜索」更新，找到更多宁波化妆师好岗位，大约 10-30 分钟完成。</p>
+  <p class="sub">云端自动跑「扩大搜索」和岗位核验；完成后自动生成页面。通常几分钟，状态可随时查看。</p>
 
   <div class="card">
     <h2>📊 现在是什么状态？点一下就知道</h2>
@@ -73,7 +73,7 @@
     <h2><span class="num">3</span> 当前运营方式</h2>
     <button class="big-btn" id="goUpdate" disabled>🧑‍💻 由 Codex 人工审核更新</button>
     <div id="result" class="tip hidden"></div>
-    <p class="small" style="margin-top:10px;">以后直接在 Codex 对话里说“更新宁波化妆师岗位”即可。人工完成搜索、核验、去重和发布，不需要令牌，也不产生 API 额度费用。</p>
+    <p class="small" style="margin-top:10px;">每次更新前会自动复查待核验岗位、直链和招聘状态；详情页受登录或风控保护时只标记为“已确认在招”，不会绕过安全验证。</p>
   </div>
 
   <div class="card">
@@ -89,7 +89,10 @@
   var PAT_KEY = 'makeup_pat';
   var saved = localStorage.getItem(PAT_KEY);
   var patInput = document.getElementById('pat');
-  if (saved) { patInput.value = saved; }
+  if (saved) {
+    patInput.value = saved;
+    document.getElementById('goUpdate').disabled = false;
+  }
 
   function msg(el, text, cls) {
     el.textContent = text;
@@ -102,6 +105,7 @@
     var el = document.getElementById('patMsg');
     if (!v) { msg(el, '请先粘贴令牌', 'err'); return; }
     localStorage.setItem(PAT_KEY, v);
+    document.getElementById('goUpdate').disabled = false;
     msg(el, '✅ 令牌已保存！现在可以直接点下方「立即云端更新」', 'ok');
   });
 
@@ -123,7 +127,7 @@
       body: JSON.stringify({ ref: 'main' })
     }).then(function (r) {
       if (r.status === 204 || r.status === 202 || r.status === 201) {
-        msg(el, '✅ 更新已启动！约 10-30 分钟后刷新网站就能看到新岗位。30 分钟内重复点只会排队，不会跑多份。', 'ok');
+        msg(el, '✅ 更新已启动！点上方「查看更新状态」可看排队/运行中/成功/失败。系统会自动核验，重复触发不会并行跑多份。', 'ok');
       } else if (r.status === 401) {
         msg(el, '❌ 令牌无效或已过期：请重新走第 2 步创建一个新令牌并保存', 'err');
       } else {
