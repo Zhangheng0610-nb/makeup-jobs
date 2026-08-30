@@ -77,7 +77,9 @@ def main() -> None:
     score_lines = re.findall(r"(?m)^-\s*📊\s*\*\*verification_score\*\*\s*[：:]\s*(\d+)", text)
     if any(int(x) > 100 for x in score_lines):
         fail("核验分数超过100")
-    state_lines = re.findall(r"(?m)^-\s*🧩\s*\*\*verification_state\*\*\s*[：:]\s*(\S*)", text)
+    state_lines = [x.strip() for x in re.findall(
+        r"(?m)^-\s*🧩\s*\*\*verification_state\*\*\s*[：:]([^\r\n]*)", text
+    )]
     if any(x not in {"", "active", "stale", "possibly_closed"} for x in state_lines):
         fail("未知核验状态标记")
 
