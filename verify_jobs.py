@@ -31,7 +31,9 @@ JOBS_MD = ROOT / "招聘" / "jobs.md"
 LOG_FILE = ROOT / "data" / "verification-log.json"
 COOLDOWN_DAYS = 7
 MAX_WORKERS = 6
-HTTP_TIMEOUT = 10
+# Keep a batch run bounded on CI runners.  A source timeout is recorded as
+# no evidence; it is never treated as proof that a job is closed.
+HTTP_TIMEOUT = 6
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
@@ -232,10 +234,19 @@ def bing_search(query: str, limit: int = 8) -> list[dict]:
 
 
 def search(query: str) -> list[dict]:
-    # Keep the same broad fallback order as the existing updater.  Each
-    # function only reads public result HTML and returns [] on blocking.
-    for fn in (baidu_search, ddg_search, bing_search):
-        results = fn(query)
+    # Query the public engines in parallel.  Sequential fallback made a
+    # full CI batch wait through three timeouts for every keyword.  Returning
+    # the first non-empty source still preserves source priority by checking
+    # the result list in the declared order after all calls finish.
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+        futures = [pool.submit(fn, query) for fn in (baidu_search, ddg_search, bing_search)]
+        results_by_source: list[list[dict]] = []
+        for future in futures:
+            try:
+                results_by_source.append(future.result())
+            except Exception:
+                results_by_source.append([])
+    for results in results_by_source:
         if results:
             return results
     return []
