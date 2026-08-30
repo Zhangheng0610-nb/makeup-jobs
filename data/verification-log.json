@@ -3783,5 +3783,1865 @@
       "score": 0
     },
     "error": "搜索渠道没有返回可用候选结果"
+  },
+  {
+    "job_id": 4,
+    "company": "宁波薇蒽希摄影有限公司（海曙都市仁和中心）",
+    "position": "婚礼化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波薇蒽希摄影有限公司（海曙都市仁和中心）\" \"婚礼化妆师\" 宁波 招聘",
+      "\"宁波薇蒽希摄影\" \"婚礼化妆师\" 宁波 招聘",
+      "\"宁波薇蒽希摄影\" 化妆师 招聘",
+      "宁波 海曙区 \"宁波薇蒽希摄影\" \"婚礼化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波薇蒽希摄影\" \"婚礼化妆师\"",
+      "site:58.com \"宁波薇蒽希摄影\" \"婚礼化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波薇蒽希摄影\" \"婚礼化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波薇蒽希摄影\" \"婚礼化妆师\"",
+      "site:7192.com \"宁波薇蒽希摄影\" \"婚礼化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波薇蒽希摄影\" \"婚礼化妆师\""
+    ],
+    "candidates": [
+      {
+        "status": "pending",
+        "source": "BOSS直聘",
+        "source_key": "boss",
+        "verification_url": "https://html.duckduckgo.com/html/?q=%22%E5%AE%81%E6%B3%A2%E8%96%87%E8%92%BD%E5%B8%8C%E6%91%84%E5%BD%B1%22%20%E5%8C%96%E5%A6%86%E5%B8%88%20%E6%8B%9B%E8%81%98",
+        "direct_url": "",
+        "score": 30,
+        "state": "",
+        "evidence": {
+          "company_match": true,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 30
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "「宁波薇蒽希摄影有限公司招聘」-boss直聘",
+          "url": "https://www.zhipin.com/companys/eaf1afef1160a99703d92tS7ElE~.html",
+          "snippet": "BOSS直聘为求职者提供2026年宁波薇蒽希摄影有限公司招聘信息，更有宁波薇蒽希摄影有限公司的品牌信息（ 宁波薇蒽希摄影",
+          "query": "\"宁波薇蒽希摄影\" 化妆师 招聘"
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      }
+    ],
+    "match_score": 30,
+    "final_status": "pending",
+    "verification_source": "BOSS直聘",
+    "verification_url": "https://html.duckduckgo.com/html/?q=%22%E5%AE%81%E6%B3%A2%E8%96%87%E8%92%BD%E5%B8%8C%E6%91%84%E5%BD%B1%22%20%E5%8C%96%E5%A6%86%E5%B8%88%20%E6%8B%9B%E8%81%98",
+    "direct_url": "",
+    "evidence": {
+      "company_match": true,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 30
+    },
+    "error": "未找到同时匹配公司和岗位的当前招聘记录",
+    "verification_state": ""
+  },
+  {
+    "job_id": 5,
+    "company": "海马体照相馆·宁波海曙印象城店（缦图摄影）",
+    "position": "化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"海马体照相馆·宁波海曙印象城店（缦图摄影）\" \"化妆师\" 宁波 招聘",
+      "\"海马体照相馆·宁波海曙印象城店\" \"化妆师\" 宁波 招聘",
+      "\"海马体照相馆·宁波海曙印象城店\" 化妆师 招聘",
+      "宁波 海曙区 \"海马体照相馆·宁波海曙印象城店\" \"化妆师\"",
+      "site:zhipin.com/zhaopin/ \"海马体照相馆·宁波海曙印象城店\" \"化妆师\"",
+      "site:58.com \"海马体照相馆·宁波海曙印象城店\" \"化妆师\" 宁波",
+      "site:liepin.com/job/ \"海马体照相馆·宁波海曙印象城店\" \"化妆师\" 宁波",
+      "site:51job.com/ningbo \"海马体照相馆·宁波海曙印象城店\" \"化妆师\"",
+      "site:7192.com \"海马体照相馆·宁波海曙印象城店\" \"化妆师\" 宁波",
+      "site:gongzuo365.com \"海马体照相馆·宁波海曙印象城店\" \"化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 6,
+    "company": "慈溪爱肖肖婚纱摄影有限公司（慈溪康鑫梵石花园北门）",
+    "position": "化妆师（招1-2人）",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"慈溪爱肖肖婚纱摄影有限公司（慈溪康鑫梵石花园北门）\" \"化妆师（招1-2人）\" 宁波 招聘",
+      "\"慈溪爱肖肖婚纱摄影\" \"化妆师（招1-2人）\" 宁波 招聘",
+      "\"慈溪爱肖肖婚纱摄影\" 化妆师 招聘",
+      "宁波 慈溪 \"慈溪爱肖肖婚纱摄影\" \"化妆师（招1-2人）\"",
+      "site:zhipin.com/zhaopin/ \"慈溪爱肖肖婚纱摄影\" \"化妆师（招1-2人）\"",
+      "site:58.com \"慈溪爱肖肖婚纱摄影\" \"化妆师（招1-2人）\" 宁波",
+      "site:liepin.com/job/ \"慈溪爱肖肖婚纱摄影\" \"化妆师（招1-2人）\" 宁波",
+      "site:51job.com/ningbo \"慈溪爱肖肖婚纱摄影\" \"化妆师（招1-2人）\"",
+      "site:7192.com \"慈溪爱肖肖婚纱摄影\" \"化妆师（招1-2人）\" 宁波",
+      "site:gongzuo365.com \"慈溪爱肖肖婚纱摄影\" \"化妆师（招1-2人）\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 9,
+    "company": "宁波吉田形象设计有限公司",
+    "position": "化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波吉田形象设计有限公司\" \"化妆师\" 宁波 招聘",
+      "\"宁波吉田形象设计\" \"化妆师\" 宁波 招聘",
+      "\"宁波吉田形象设计\" 化妆师 招聘",
+      "宁波 宁波 \"宁波吉田形象设计\" \"化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波吉田形象设计\" \"化妆师\"",
+      "site:58.com \"宁波吉田形象设计\" \"化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波吉田形象设计\" \"化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波吉田形象设计\" \"化妆师\"",
+      "site:7192.com \"宁波吉田形象设计\" \"化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波吉田形象设计\" \"化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 10,
+    "company": "化妆师（北仑新碶）",
+    "position": "化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"化妆师（北仑新碶）\" \"化妆师\" 宁波 招聘",
+      "\"化妆师\" \"化妆师\" 宁波 招聘",
+      "\"化妆师\" 化妆师 招聘",
+      "宁波 北仑区 \"化妆师\" \"化妆师\"",
+      "site:zhipin.com/zhaopin/ \"化妆师\" \"化妆师\"",
+      "site:58.com \"化妆师\" \"化妆师\" 宁波",
+      "site:liepin.com/job/ \"化妆师\" \"化妆师\" 宁波",
+      "site:51job.com/ningbo \"化妆师\" \"化妆师\"",
+      "site:7192.com \"化妆师\" \"化妆师\" 宁波",
+      "site:gongzuo365.com \"化妆师\" \"化妆师\""
+    ],
+    "candidates": [
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=%E5%AE%81%E6%B3%A2%20%E5%8C%97%E4%BB%91%E5%8C%BA%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "宁波 市（浙江省辖地级市）_百度百科",
+          "url": "https://baike.baidu.com/item/%E5%AE%81%E6%B3%A2%E5%B8%82/5901093",
+          "snippet": "",
+          "query": "宁波 北仑区 \"化妆师\" \"化妆师\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=%E5%AE%81%E6%B3%A2%20%E5%8C%97%E4%BB%91%E5%8C%BA%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "宁波 市 - 维基百科，自由的百科全书",
+          "url": "https://zh.wikipedia.org/wiki/%E5%AE%81%E6%B3%A2%E5%B8%82",
+          "snippet": "",
+          "query": "宁波 北仑区 \"化妆师\" \"化妆师\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=%E5%AE%81%E6%B3%A2%20%E5%8C%97%E4%BB%91%E5%8C%BA%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "宁波 一日游必去景点推荐，浙江 宁波 10大好玩景点，你去过 ...",
+          "url": "https://www.thepaper.cn/newsDetail_forward_26098030",
+          "snippet": "",
+          "query": "宁波 北仑区 \"化妆师\" \"化妆师\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=%E5%AE%81%E6%B3%A2%20%E5%8C%97%E4%BB%91%E5%8C%BA%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "中国 宁波 网- 宁波 新闻首页",
+          "url": "http://nbnews.cnnb.com.cn/",
+          "snippet": "",
+          "query": "宁波 北仑区 \"化妆师\" \"化妆师\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=%E5%AE%81%E6%B3%A2%20%E5%8C%97%E4%BB%91%E5%8C%BA%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "宁波 十大必玩景点，去过九处才算玩转 宁波 _ 宁波 旅游网",
+          "url": "https://www.nbtour.com/archives/4358",
+          "snippet": "",
+          "query": "宁波 北仑区 \"化妆师\" \"化妆师\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=%E5%AE%81%E6%B3%A2%20%E5%8C%97%E4%BB%91%E5%8C%BA%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "中国 宁波 网-新闻-服务-论坛-门户",
+          "url": "http://www.cnnb.com.cn/",
+          "snippet": "",
+          "query": "宁波 北仑区 \"化妆师\" \"化妆师\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=%E5%AE%81%E6%B3%A2%20%E5%8C%97%E4%BB%91%E5%8C%BA%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "超强 宁波 旅游攻略 (附旅游参考路线) - 知乎",
+          "url": "https://zhuanlan.zhihu.com/p/183898678",
+          "snippet": "",
+          "query": "宁波 北仑区 \"化妆师\" \"化妆师\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=%E5%AE%81%E6%B3%A2%20%E5%8C%97%E4%BB%91%E5%8C%BA%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "宁波 市 - 维基百科，自由的百科全书",
+          "url": "https://zh.wikipedia.org/zh/%E5%AE%81%E6%B3%A2%E5%B8%82",
+          "snippet": "",
+          "query": "宁波 北仑区 \"化妆师\" \"化妆师\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      }
+    ],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "搜索引擎",
+    "verification_url": "https://cn.bing.com/search?q=%E5%AE%81%E6%B3%A2%20%E5%8C%97%E4%BB%91%E5%8C%BA%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "未找到同时匹配公司和岗位的当前招聘记录",
+    "verification_state": ""
+  },
+  {
+    "job_id": 12,
+    "company": "宁波蜜芽映画儿童摄影（鄞州天童北路城市广场2楼）",
+    "position": "儿童化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波蜜芽映画儿童摄影（鄞州天童北路城市广场2楼）\" \"儿童化妆师\" 宁波 招聘",
+      "\"宁波蜜芽映画儿童摄影\" \"儿童化妆师\" 宁波 招聘",
+      "\"宁波蜜芽映画儿童摄影\" 化妆师 招聘",
+      "宁波 鄞州区 \"宁波蜜芽映画儿童摄影\" \"儿童化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波蜜芽映画儿童摄影\" \"儿童化妆师\"",
+      "site:58.com \"宁波蜜芽映画儿童摄影\" \"儿童化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波蜜芽映画儿童摄影\" \"儿童化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波蜜芽映画儿童摄影\" \"儿童化妆师\"",
+      "site:7192.com \"宁波蜜芽映画儿童摄影\" \"儿童化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波蜜芽映画儿童摄影\" \"儿童化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 17,
+    "company": "宁波有肆无型时尚文化创意有限公司",
+    "position": "化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波有肆无型时尚文化创意有限公司\" \"化妆师\" 宁波 招聘",
+      "\"宁波有肆无型时尚文化创意\" \"化妆师\" 宁波 招聘",
+      "\"宁波有肆无型时尚文化创意\" 化妆师 招聘",
+      "宁波 宁波 \"宁波有肆无型时尚文化创意\" \"化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波有肆无型时尚文化创意\" \"化妆师\"",
+      "site:58.com \"宁波有肆无型时尚文化创意\" \"化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波有肆无型时尚文化创意\" \"化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波有肆无型时尚文化创意\" \"化妆师\"",
+      "site:7192.com \"宁波有肆无型时尚文化创意\" \"化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波有肆无型时尚文化创意\" \"化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 18,
+    "company": "余姚梵朵摄影有限责任公司（凤山）",
+    "position": "化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"余姚梵朵摄影有限责任公司（凤山）\" \"化妆师\" 宁波 招聘",
+      "\"余姚梵朵摄影\" \"化妆师\" 宁波 招聘",
+      "\"余姚梵朵摄影\" 化妆师 招聘",
+      "宁波 余姚 \"余姚梵朵摄影\" \"化妆师\"",
+      "site:zhipin.com/zhaopin/ \"余姚梵朵摄影\" \"化妆师\"",
+      "site:58.com \"余姚梵朵摄影\" \"化妆师\" 宁波",
+      "site:liepin.com/job/ \"余姚梵朵摄影\" \"化妆师\" 宁波",
+      "site:51job.com/ningbo \"余姚梵朵摄影\" \"化妆师\"",
+      "site:7192.com \"余姚梵朵摄影\" \"化妆师\" 宁波",
+      "site:gongzuo365.com \"余姚梵朵摄影\" \"化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 19,
+    "company": "慈溪现代经典婚纱摄影楼（慈溪乌山路88号）",
+    "position": "化妆师/化妆主管/助理",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"慈溪现代经典婚纱摄影楼（慈溪乌山路88号）\" \"化妆师/化妆主管/助理\" 宁波 招聘",
+      "\"慈溪现代经典婚纱摄影楼\" \"化妆师/化妆主管/助理\" 宁波 招聘",
+      "\"慈溪现代经典婚纱摄影楼\" 化妆师 招聘",
+      "宁波 慈溪 \"慈溪现代经典婚纱摄影楼\" \"化妆师/化妆主管/助理\"",
+      "site:zhipin.com/zhaopin/ \"慈溪现代经典婚纱摄影楼\" \"化妆师/化妆主管/助理\"",
+      "site:58.com \"慈溪现代经典婚纱摄影楼\" \"化妆师/化妆主管/助理\" 宁波",
+      "site:liepin.com/job/ \"慈溪现代经典婚纱摄影楼\" \"化妆师/化妆主管/助理\" 宁波",
+      "site:51job.com/ningbo \"慈溪现代经典婚纱摄影楼\" \"化妆师/化妆主管/助理\"",
+      "site:7192.com \"慈溪现代经典婚纱摄影楼\" \"化妆师/化妆主管/助理\" 宁波",
+      "site:gongzuo365.com \"慈溪现代经典婚纱摄影楼\" \"化妆师/化妆主管/助理\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 26,
+    "company": "宁波市鄞州中河大白家摄影工作室（十方东进社）",
+    "position": "化妆师/造型师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波市鄞州中河大白家摄影工作室（十方东进社）\" \"化妆师/造型师\" 宁波 招聘",
+      "\"宁波市鄞州中河大白家摄影\" \"化妆师/造型师\" 宁波 招聘",
+      "\"宁波市鄞州中河大白家摄影\" 化妆师 招聘",
+      "宁波 鄞州区 \"宁波市鄞州中河大白家摄影\" \"化妆师/造型师\"",
+      "site:zhipin.com/zhaopin/ \"宁波市鄞州中河大白家摄影\" \"化妆师/造型师\"",
+      "site:58.com \"宁波市鄞州中河大白家摄影\" \"化妆师/造型师\" 宁波",
+      "site:liepin.com/job/ \"宁波市鄞州中河大白家摄影\" \"化妆师/造型师\" 宁波",
+      "site:51job.com/ningbo \"宁波市鄞州中河大白家摄影\" \"化妆师/造型师\"",
+      "site:7192.com \"宁波市鄞州中河大白家摄影\" \"化妆师/造型师\" 宁波",
+      "site:gongzuo365.com \"宁波市鄞州中河大白家摄影\" \"化妆师/造型师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 33,
+    "company": "宁波沄梦文化创意有限公司（天一广场2楼）",
+    "position": "化妆助理",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波沄梦文化创意有限公司（天一广场2楼）\" \"化妆助理\" 宁波 招聘",
+      "\"宁波沄梦文化创意\" \"化妆助理\" 宁波 招聘",
+      "\"宁波沄梦文化创意\" 化妆师 招聘",
+      "宁波 海曙区 \"宁波沄梦文化创意\" \"化妆助理\"",
+      "site:zhipin.com/zhaopin/ \"宁波沄梦文化创意\" \"化妆助理\"",
+      "site:58.com \"宁波沄梦文化创意\" \"化妆助理\" 宁波",
+      "site:liepin.com/job/ \"宁波沄梦文化创意\" \"化妆助理\" 宁波",
+      "site:51job.com/ningbo \"宁波沄梦文化创意\" \"化妆助理\"",
+      "site:7192.com \"宁波沄梦文化创意\" \"化妆助理\" 宁波",
+      "site:gongzuo365.com \"宁波沄梦文化创意\" \"化妆助理\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 35,
+    "company": "宁波市鄞州首南星麦文化活动策划工作室（鄞州城南商务大厦A座）",
+    "position": "摄影助理",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波市鄞州首南星麦文化活动策划工作室（鄞州城南商务大厦A座）\" \"摄影助理\" 宁波 招聘",
+      "\"宁波市鄞州首南星麦文化活动策划\" \"摄影助理\" 宁波 招聘",
+      "\"宁波市鄞州首南星麦文化活动策划\" 化妆师 招聘",
+      "宁波 鄞州区 \"宁波市鄞州首南星麦文化活动策划\" \"摄影助理\"",
+      "site:zhipin.com/zhaopin/ \"宁波市鄞州首南星麦文化活动策划\" \"摄影助理\"",
+      "site:58.com \"宁波市鄞州首南星麦文化活动策划\" \"摄影助理\" 宁波",
+      "site:liepin.com/job/ \"宁波市鄞州首南星麦文化活动策划\" \"摄影助理\" 宁波",
+      "site:51job.com/ningbo \"宁波市鄞州首南星麦文化活动策划\" \"摄影助理\"",
+      "site:7192.com \"宁波市鄞州首南星麦文化活动策划\" \"摄影助理\" 宁波",
+      "site:gongzuo365.com \"宁波市鄞州首南星麦文化活动策划\" \"摄影助理\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 36,
+    "company": "宁波北仑我的宝贝儿童摄影（北仑长江路880-886）",
+    "position": "儿童化妆师（招2人）",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波北仑我的宝贝儿童摄影（北仑长江路880-886）\" \"儿童化妆师（招2人）\" 宁波 招聘",
+      "\"宁波北仑我的宝贝儿童摄影\" \"儿童化妆师（招2人）\" 宁波 招聘",
+      "\"宁波北仑我的宝贝儿童摄影\" 化妆师 招聘",
+      "宁波 北仑区 \"宁波北仑我的宝贝儿童摄影\" \"儿童化妆师（招2人）\"",
+      "site:zhipin.com/zhaopin/ \"宁波北仑我的宝贝儿童摄影\" \"儿童化妆师（招2人）\"",
+      "site:58.com \"宁波北仑我的宝贝儿童摄影\" \"儿童化妆师（招2人）\" 宁波",
+      "site:liepin.com/job/ \"宁波北仑我的宝贝儿童摄影\" \"儿童化妆师（招2人）\" 宁波",
+      "site:51job.com/ningbo \"宁波北仑我的宝贝儿童摄影\" \"儿童化妆师（招2人）\"",
+      "site:7192.com \"宁波北仑我的宝贝儿童摄影\" \"儿童化妆师（招2人）\" 宁波",
+      "site:gongzuo365.com \"宁波北仑我的宝贝儿童摄影\" \"儿童化妆师（招2人）\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 37,
+    "company": "宁波曾继盛文化传媒有限公司（鄞州创新128园区）",
+    "position": "写真化妆师（招1人）",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波曾继盛文化传媒有限公司（鄞州创新128园区）\" \"写真化妆师（招1人）\" 宁波 招聘",
+      "\"宁波曾继盛文化传媒\" \"写真化妆师（招1人）\" 宁波 招聘",
+      "\"宁波曾继盛文化传媒\" 化妆师 招聘",
+      "宁波 鄞州区 \"宁波曾继盛文化传媒\" \"写真化妆师（招1人）\"",
+      "site:zhipin.com/zhaopin/ \"宁波曾继盛文化传媒\" \"写真化妆师（招1人）\"",
+      "site:58.com \"宁波曾继盛文化传媒\" \"写真化妆师（招1人）\" 宁波",
+      "site:liepin.com/job/ \"宁波曾继盛文化传媒\" \"写真化妆师（招1人）\" 宁波",
+      "site:51job.com/ningbo \"宁波曾继盛文化传媒\" \"写真化妆师（招1人）\"",
+      "site:7192.com \"宁波曾继盛文化传媒\" \"写真化妆师（招1人）\" 宁波",
+      "site:gongzuo365.com \"宁波曾继盛文化传媒\" \"写真化妆师（招1人）\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 38,
+    "company": "宁波世纪繁荣旅游开发有限公司（宁海）",
+    "position": "化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波世纪繁荣旅游开发有限公司（宁海）\" \"化妆师\" 宁波 招聘",
+      "\"宁波世纪繁荣旅游开发\" \"化妆师\" 宁波 招聘",
+      "\"宁波世纪繁荣旅游开发\" 化妆师 招聘",
+      "宁波 宁海 \"宁波世纪繁荣旅游开发\" \"化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波世纪繁荣旅游开发\" \"化妆师\"",
+      "site:58.com \"宁波世纪繁荣旅游开发\" \"化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波世纪繁荣旅游开发\" \"化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波世纪繁荣旅游开发\" \"化妆师\"",
+      "site:7192.com \"宁波世纪繁荣旅游开发\" \"化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波世纪繁荣旅游开发\" \"化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 43,
+    "company": "大象映画宁波旗舰店",
+    "position": "化妆师/摄影化妆助理",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"大象映画宁波旗舰店\" \"化妆师/摄影化妆助理\" 宁波 招聘",
+      "\"大象映画宁波旗舰店\" \"化妆师/摄影化妆助理\" 宁波 招聘",
+      "\"大象映画宁波旗舰店\" 化妆师 招聘",
+      "宁波 宁波（平台入口） \"大象映画宁波旗舰店\" \"化妆师/摄影化妆助理\"",
+      "site:zhipin.com/zhaopin/ \"大象映画宁波旗舰店\" \"化妆师/摄影化妆助理\"",
+      "site:58.com \"大象映画宁波旗舰店\" \"化妆师/摄影化妆助理\" 宁波",
+      "site:liepin.com/job/ \"大象映画宁波旗舰店\" \"化妆师/摄影化妆助理\" 宁波",
+      "site:51job.com/ningbo \"大象映画宁波旗舰店\" \"化妆师/摄影化妆助理\"",
+      "site:7192.com \"大象映画宁波旗舰店\" \"化妆师/摄影化妆助理\" 宁波",
+      "site:gongzuo365.com \"大象映画宁波旗舰店\" \"化妆师/摄影化妆助理\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 47,
+    "company": "广州侬淇科技有限公司（宁波·海曙段塘/鄞州福明）",
+    "position": "婚纱摄影化妆师助理（可新手）",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"广州侬淇科技有限公司（宁波·海曙段塘/鄞州福明）\" \"婚纱摄影化妆师助理（可新手）\" 宁波 招聘",
+      "\"广州侬淇科技\" \"婚纱摄影化妆师助理（可新手）\" 宁波 招聘",
+      "\"广州侬淇科技\" 化妆师 招聘",
+      "宁波 海曙区/鄞州区 \"广州侬淇科技\" \"婚纱摄影化妆师助理（可新手）\"",
+      "site:zhipin.com/zhaopin/ \"广州侬淇科技\" \"婚纱摄影化妆师助理（可新手）\"",
+      "site:58.com \"广州侬淇科技\" \"婚纱摄影化妆师助理（可新手）\" 宁波",
+      "site:liepin.com/job/ \"广州侬淇科技\" \"婚纱摄影化妆师助理（可新手）\" 宁波",
+      "site:51job.com/ningbo \"广州侬淇科技\" \"婚纱摄影化妆师助理（可新手）\"",
+      "site:7192.com \"广州侬淇科技\" \"婚纱摄影化妆师助理（可新手）\" 宁波",
+      "site:gongzuo365.com \"广州侬淇科技\" \"婚纱摄影化妆师助理（可新手）\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 53,
+    "company": "江苏鸿元盛景文化产业（鄞州百丈）",
+    "position": "化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"江苏鸿元盛景文化产业（鄞州百丈）\" \"化妆师\" 宁波 招聘",
+      "\"江苏鸿元盛景文化产业\" \"化妆师\" 宁波 招聘",
+      "\"江苏鸿元盛景文化产业\" 化妆师 招聘",
+      "宁波 鄞州区 \"江苏鸿元盛景文化产业\" \"化妆师\"",
+      "site:zhipin.com/zhaopin/ \"江苏鸿元盛景文化产业\" \"化妆师\"",
+      "site:58.com \"江苏鸿元盛景文化产业\" \"化妆师\" 宁波",
+      "site:liepin.com/job/ \"江苏鸿元盛景文化产业\" \"化妆师\" 宁波",
+      "site:51job.com/ningbo \"江苏鸿元盛景文化产业\" \"化妆师\"",
+      "site:7192.com \"江苏鸿元盛景文化产业\" \"化妆师\" 宁波",
+      "site:gongzuo365.com \"江苏鸿元盛景文化产业\" \"化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 56,
+    "company": "宁波奉化慕纱婚纱馆（奉化银泰商场金街15号）",
+    "position": "化妆师（招1人）",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波奉化慕纱婚纱馆（奉化银泰商场金街15号）\" \"化妆师（招1人）\" 宁波 招聘",
+      "\"宁波奉化慕纱婚纱馆\" \"化妆师（招1人）\" 宁波 招聘",
+      "\"宁波奉化慕纱婚纱馆\" 化妆师 招聘",
+      "宁波 奉化区 \"宁波奉化慕纱婚纱馆\" \"化妆师（招1人）\"",
+      "site:zhipin.com/zhaopin/ \"宁波奉化慕纱婚纱馆\" \"化妆师（招1人）\"",
+      "site:58.com \"宁波奉化慕纱婚纱馆\" \"化妆师（招1人）\" 宁波",
+      "site:liepin.com/job/ \"宁波奉化慕纱婚纱馆\" \"化妆师（招1人）\" 宁波",
+      "site:51job.com/ningbo \"宁波奉化慕纱婚纱馆\" \"化妆师（招1人）\"",
+      "site:7192.com \"宁波奉化慕纱婚纱馆\" \"化妆师（招1人）\" 宁波",
+      "site:gongzuo365.com \"宁波奉化慕纱婚纱馆\" \"化妆师（招1人）\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 61,
+    "company": "【待核验线索】宁波海曙贰壹影像",
+    "position": "高级化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波海曙贰壹影像\" \"高级化妆师\" 宁波 招聘",
+      "\"宁波海曙贰壹影像\" \"高级化妆师\" 宁波 招聘",
+      "\"宁波海曙贰壹影像\" 化妆师 招聘",
+      "宁波 海曙区机场路 \"宁波海曙贰壹影像\" \"高级化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波海曙贰壹影像\" \"高级化妆师\"",
+      "site:58.com \"宁波海曙贰壹影像\" \"高级化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波海曙贰壹影像\" \"高级化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波海曙贰壹影像\" \"高级化妆师\"",
+      "site:7192.com \"宁波海曙贰壹影像\" \"高级化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波海曙贰壹影像\" \"高级化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 62,
+    "company": "【待核验线索】宁波慕摄影",
+    "position": "婚纱摄影师/化妆师/化妆主管",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\" 宁波 招聘",
+      "\"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\" 宁波 招聘",
+      "\"宁波慕摄影\" 化妆师 招聘",
+      "宁波 鄞州区东钱湖 \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\"",
+      "site:zhipin.com/zhaopin/ \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\"",
+      "site:58.com \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\" 宁波",
+      "site:liepin.com/job/ \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\" 宁波",
+      "site:51job.com/ningbo \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\"",
+      "site:7192.com \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\" 宁波",
+      "site:gongzuo365.com \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\""
+    ],
+    "candidates": [
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=site%3Agongzuo365.com%20%22%E5%AE%81%E6%B3%A2%E6%85%95%E6%91%84%E5%BD%B1%22%20%22%E5%A9%9A%E7%BA%B1%E6%91%84%E5%BD%B1%E5%B8%88/%E5%8C%96%E5%A6%86%E5%B8%88/%E5%8C%96%E5%A6%86%E4%B8%BB%E7%AE%A1%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "宁波 市（浙江省辖地级市）_百度百科",
+          "url": "https://baike.baidu.com/item/%E5%AE%81%E6%B3%A2%E5%B8%82/5901093",
+          "snippet": "",
+          "query": "site:gongzuo365.com \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=site%3Agongzuo365.com%20%22%E5%AE%81%E6%B3%A2%E6%85%95%E6%91%84%E5%BD%B1%22%20%22%E5%A9%9A%E7%BA%B1%E6%91%84%E5%BD%B1%E5%B8%88/%E5%8C%96%E5%A6%86%E5%B8%88/%E5%8C%96%E5%A6%86%E4%B8%BB%E7%AE%A1%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "宁波 市 - 维基百科，自由的百科全书",
+          "url": "https://zh.wikipedia.org/wiki/%E5%AE%81%E6%B3%A2%E5%B8%82",
+          "snippet": "",
+          "query": "site:gongzuo365.com \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=site%3Agongzuo365.com%20%22%E5%AE%81%E6%B3%A2%E6%85%95%E6%91%84%E5%BD%B1%22%20%22%E5%A9%9A%E7%BA%B1%E6%91%84%E5%BD%B1%E5%B8%88/%E5%8C%96%E5%A6%86%E5%B8%88/%E5%8C%96%E5%A6%86%E4%B8%BB%E7%AE%A1%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "宁波 一日游必去景点推荐，浙江 宁波 10大好玩景点，你去过 ...",
+          "url": "https://www.thepaper.cn/newsDetail_forward_26098030",
+          "snippet": "",
+          "query": "site:gongzuo365.com \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=site%3Agongzuo365.com%20%22%E5%AE%81%E6%B3%A2%E6%85%95%E6%91%84%E5%BD%B1%22%20%22%E5%A9%9A%E7%BA%B1%E6%91%84%E5%BD%B1%E5%B8%88/%E5%8C%96%E5%A6%86%E5%B8%88/%E5%8C%96%E5%A6%86%E4%B8%BB%E7%AE%A1%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "中国 宁波 网- 宁波 新闻首页",
+          "url": "http://nbnews.cnnb.com.cn/",
+          "snippet": "",
+          "query": "site:gongzuo365.com \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=site%3Agongzuo365.com%20%22%E5%AE%81%E6%B3%A2%E6%85%95%E6%91%84%E5%BD%B1%22%20%22%E5%A9%9A%E7%BA%B1%E6%91%84%E5%BD%B1%E5%B8%88/%E5%8C%96%E5%A6%86%E5%B8%88/%E5%8C%96%E5%A6%86%E4%B8%BB%E7%AE%A1%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "宁波 十大必玩景点，去过九处才算玩转 宁波 _ 宁波 旅游网",
+          "url": "https://www.nbtour.com/archives/4358",
+          "snippet": "",
+          "query": "site:gongzuo365.com \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=site%3Agongzuo365.com%20%22%E5%AE%81%E6%B3%A2%E6%85%95%E6%91%84%E5%BD%B1%22%20%22%E5%A9%9A%E7%BA%B1%E6%91%84%E5%BD%B1%E5%B8%88/%E5%8C%96%E5%A6%86%E5%B8%88/%E5%8C%96%E5%A6%86%E4%B8%BB%E7%AE%A1%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "中国 宁波 网-新闻-服务-论坛-门户",
+          "url": "http://www.cnnb.com.cn/",
+          "snippet": "",
+          "query": "site:gongzuo365.com \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=site%3Agongzuo365.com%20%22%E5%AE%81%E6%B3%A2%E6%85%95%E6%91%84%E5%BD%B1%22%20%22%E5%A9%9A%E7%BA%B1%E6%91%84%E5%BD%B1%E5%B8%88/%E5%8C%96%E5%A6%86%E5%B8%88/%E5%8C%96%E5%A6%86%E4%B8%BB%E7%AE%A1%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "超强 宁波 旅游攻略 (附旅游参考路线) - 知乎",
+          "url": "https://zhuanlan.zhihu.com/p/183898678",
+          "snippet": "",
+          "query": "site:gongzuo365.com \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      },
+      {
+        "status": "pending",
+        "source": "搜索引擎",
+        "source_key": "search",
+        "verification_url": "https://cn.bing.com/search?q=site%3Agongzuo365.com%20%22%E5%AE%81%E6%B3%A2%E6%85%95%E6%91%84%E5%BD%B1%22%20%22%E5%A9%9A%E7%BA%B1%E6%91%84%E5%BD%B1%E5%B8%88/%E5%8C%96%E5%A6%86%E5%B8%88/%E5%8C%96%E5%A6%86%E4%B8%BB%E7%AE%A1%22",
+        "direct_url": "",
+        "score": 0,
+        "state": "",
+        "evidence": {
+          "company_match": false,
+          "title_match": false,
+          "location_match": false,
+          "salary_match": false,
+          "experience_education_match": false,
+          "current_page": false,
+          "score": 0
+        },
+        "error": "未找到同时匹配公司和岗位的当前招聘记录",
+        "candidate": {
+          "title": "宁波 市 - 维基百科，自由的百科全书",
+          "url": "https://zh.wikipedia.org/zh/%E5%AE%81%E6%B3%A2%E5%B8%82",
+          "snippet": "",
+          "query": "site:gongzuo365.com \"宁波慕摄影\" \"婚纱摄影师/化妆师/化妆主管\""
+        },
+        "detail": {
+          "status": 0,
+          "final_url": "",
+          "blocked": false,
+          "stale": false
+        }
+      }
+    ],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "搜索引擎",
+    "verification_url": "https://cn.bing.com/search?q=site%3Agongzuo365.com%20%22%E5%AE%81%E6%B3%A2%E6%85%95%E6%91%84%E5%BD%B1%22%20%22%E5%A9%9A%E7%BA%B1%E6%91%84%E5%BD%B1%E5%B8%88/%E5%8C%96%E5%A6%86%E5%B8%88/%E5%8C%96%E5%A6%86%E4%B8%BB%E7%AE%A1%22",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "未找到同时匹配公司和岗位的当前招聘记录",
+    "verification_state": ""
+  },
+  {
+    "job_id": 63,
+    "company": "【待核验线索】慈溪莎曼塔婚纱摄影",
+    "position": "婚纱摄影化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"慈溪莎曼塔婚纱摄影\" \"婚纱摄影化妆师\" 宁波 招聘",
+      "\"慈溪莎曼塔婚纱摄影\" \"婚纱摄影化妆师\" 宁波 招聘",
+      "\"慈溪莎曼塔婚纱摄影\" 化妆师 招聘",
+      "宁波 慈溪宗汉 \"慈溪莎曼塔婚纱摄影\" \"婚纱摄影化妆师\"",
+      "site:zhipin.com/zhaopin/ \"慈溪莎曼塔婚纱摄影\" \"婚纱摄影化妆师\"",
+      "site:58.com \"慈溪莎曼塔婚纱摄影\" \"婚纱摄影化妆师\" 宁波",
+      "site:liepin.com/job/ \"慈溪莎曼塔婚纱摄影\" \"婚纱摄影化妆师\" 宁波",
+      "site:51job.com/ningbo \"慈溪莎曼塔婚纱摄影\" \"婚纱摄影化妆师\"",
+      "site:7192.com \"慈溪莎曼塔婚纱摄影\" \"婚纱摄影化妆师\" 宁波",
+      "site:gongzuo365.com \"慈溪莎曼塔婚纱摄影\" \"婚纱摄影化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 64,
+    "company": "【待核验线索】宁波因爱而生文化传播",
+    "position": "婚纱摄影化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波因爱而生文化传播\" \"婚纱摄影化妆师\" 宁波 招聘",
+      "\"宁波因爱而生文化传播\" \"婚纱摄影化妆师\" 宁波 招聘",
+      "\"宁波因爱而生文化传播\" 化妆师 招聘",
+      "宁波 鄞州区下应 \"宁波因爱而生文化传播\" \"婚纱摄影化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波因爱而生文化传播\" \"婚纱摄影化妆师\"",
+      "site:58.com \"宁波因爱而生文化传播\" \"婚纱摄影化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波因爱而生文化传播\" \"婚纱摄影化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波因爱而生文化传播\" \"婚纱摄影化妆师\"",
+      "site:7192.com \"宁波因爱而生文化传播\" \"婚纱摄影化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波因爱而生文化传播\" \"婚纱摄影化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 65,
+    "company": "【待核验线索】宁波梵视文化发展",
+    "position": "婚纱摄影化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波梵视文化发展\" \"婚纱摄影化妆师\" 宁波 招聘",
+      "\"宁波梵视文化发展\" \"婚纱摄影化妆师\" 宁波 招聘",
+      "\"宁波梵视文化发展\" 化妆师 招聘",
+      "宁波 鄞州区福明 \"宁波梵视文化发展\" \"婚纱摄影化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波梵视文化发展\" \"婚纱摄影化妆师\"",
+      "site:58.com \"宁波梵视文化发展\" \"婚纱摄影化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波梵视文化发展\" \"婚纱摄影化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波梵视文化发展\" \"婚纱摄影化妆师\"",
+      "site:7192.com \"宁波梵视文化发展\" \"婚纱摄影化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波梵视文化发展\" \"婚纱摄影化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 66,
+    "company": "【待核验线索】宁波慕谷摄影",
+    "position": "婚纱化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波慕谷摄影\" \"婚纱化妆师\" 宁波 招聘",
+      "\"宁波慕谷摄影\" \"婚纱化妆师\" 宁波 招聘",
+      "\"宁波慕谷摄影\" 化妆师 招聘",
+      "宁波 鄞州区下应 \"宁波慕谷摄影\" \"婚纱化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波慕谷摄影\" \"婚纱化妆师\"",
+      "site:58.com \"宁波慕谷摄影\" \"婚纱化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波慕谷摄影\" \"婚纱化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波慕谷摄影\" \"婚纱化妆师\"",
+      "site:7192.com \"宁波慕谷摄影\" \"婚纱化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波慕谷摄影\" \"婚纱化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 68,
+    "company": "【待核验线索】宁波鼎尖文化传播（鄞州明空间创业园）",
+    "position": "高级化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波鼎尖文化传播（鄞州明空间创业园）\" \"高级化妆师\" 宁波 招聘",
+      "\"宁波鼎尖文化传播\" \"高级化妆师\" 宁波 招聘",
+      "\"宁波鼎尖文化传播\" 化妆师 招聘",
+      "宁波 鄞州区明空间创业园 \"宁波鼎尖文化传播\" \"高级化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波鼎尖文化传播\" \"高级化妆师\"",
+      "site:58.com \"宁波鼎尖文化传播\" \"高级化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波鼎尖文化传播\" \"高级化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波鼎尖文化传播\" \"高级化妆师\"",
+      "site:7192.com \"宁波鼎尖文化传播\" \"高级化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波鼎尖文化传播\" \"高级化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 69,
+    "company": "【待核验线索】慈溪市不晚婚纱店（慈溪浒山）",
+    "position": "婚礼跟妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"慈溪市不晚婚纱店（慈溪浒山）\" \"婚礼跟妆师\" 宁波 招聘",
+      "\"慈溪市不晚\" \"婚礼跟妆师\" 宁波 招聘",
+      "\"慈溪市不晚\" 化妆师 招聘",
+      "宁波 慈溪市浒山 \"慈溪市不晚\" \"婚礼跟妆师\"",
+      "site:zhipin.com/zhaopin/ \"慈溪市不晚\" \"婚礼跟妆师\"",
+      "site:58.com \"慈溪市不晚\" \"婚礼跟妆师\" 宁波",
+      "site:liepin.com/job/ \"慈溪市不晚\" \"婚礼跟妆师\" 宁波",
+      "site:51job.com/ningbo \"慈溪市不晚\" \"婚礼跟妆师\"",
+      "site:7192.com \"慈溪市不晚\" \"婚礼跟妆师\" 宁波",
+      "site:gongzuo365.com \"慈溪市不晚\" \"婚礼跟妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 70,
+    "company": "【待核验线索】宁波山遇川文化艺术（鄞州下应）",
+    "position": "婚纱化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波山遇川文化艺术（鄞州下应）\" \"婚纱化妆师\" 宁波 招聘",
+      "\"宁波山遇川文化艺术\" \"婚纱化妆师\" 宁波 招聘",
+      "\"宁波山遇川文化艺术\" 化妆师 招聘",
+      "宁波 鄞州区下应 \"宁波山遇川文化艺术\" \"婚纱化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波山遇川文化艺术\" \"婚纱化妆师\"",
+      "site:58.com \"宁波山遇川文化艺术\" \"婚纱化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波山遇川文化艺术\" \"婚纱化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波山遇川文化艺术\" \"婚纱化妆师\"",
+      "site:7192.com \"宁波山遇川文化艺术\" \"婚纱化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波山遇川文化艺术\" \"婚纱化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 71,
+    "company": "【待核验线索】夏木视觉（鄞州东钱湖）",
+    "position": "旅拍/写真化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"夏木视觉（鄞州东钱湖）\" \"旅拍/写真化妆师\" 宁波 招聘",
+      "\"夏木视觉\" \"旅拍/写真化妆师\" 宁波 招聘",
+      "\"夏木视觉\" 化妆师 招聘",
+      "宁波 鄞州区东钱湖 \"夏木视觉\" \"旅拍/写真化妆师\"",
+      "site:zhipin.com/zhaopin/ \"夏木视觉\" \"旅拍/写真化妆师\"",
+      "site:58.com \"夏木视觉\" \"旅拍/写真化妆师\" 宁波",
+      "site:liepin.com/job/ \"夏木视觉\" \"旅拍/写真化妆师\" 宁波",
+      "site:51job.com/ningbo \"夏木视觉\" \"旅拍/写真化妆师\"",
+      "site:7192.com \"夏木视觉\" \"旅拍/写真化妆师\" 宁波",
+      "site:gongzuo365.com \"夏木视觉\" \"旅拍/写真化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 72,
+    "company": "【待核验线索】宁波奥斯卡婚纱摄影（慈溪浒山）",
+    "position": "婚纱摄影化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波奥斯卡婚纱摄影（慈溪浒山）\" \"婚纱摄影化妆师\" 宁波 招聘",
+      "\"宁波奥斯卡婚纱摄影\" \"婚纱摄影化妆师\" 宁波 招聘",
+      "\"宁波奥斯卡婚纱摄影\" 化妆师 招聘",
+      "宁波 慈溪市浒山 \"宁波奥斯卡婚纱摄影\" \"婚纱摄影化妆师\"",
+      "site:zhipin.com/zhaopin/ \"宁波奥斯卡婚纱摄影\" \"婚纱摄影化妆师\"",
+      "site:58.com \"宁波奥斯卡婚纱摄影\" \"婚纱摄影化妆师\" 宁波",
+      "site:liepin.com/job/ \"宁波奥斯卡婚纱摄影\" \"婚纱摄影化妆师\" 宁波",
+      "site:51job.com/ningbo \"宁波奥斯卡婚纱摄影\" \"婚纱摄影化妆师\"",
+      "site:7192.com \"宁波奥斯卡婚纱摄影\" \"婚纱摄影化妆师\" 宁波",
+      "site:gongzuo365.com \"宁波奥斯卡婚纱摄影\" \"婚纱摄影化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 73,
+    "company": "【待核验线索】奉化ING岸集婚纱礼服高级定制（奉化岳林）",
+    "position": "婚礼化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"奉化ING岸集婚纱礼服高级定制（奉化岳林）\" \"婚礼化妆师\" 宁波 招聘",
+      "\"奉化ING岸集婚纱礼服高级定制\" \"婚礼化妆师\" 宁波 招聘",
+      "\"奉化ING岸集婚纱礼服高级定制\" 化妆师 招聘",
+      "宁波 奉化区岳林 \"奉化ING岸集婚纱礼服高级定制\" \"婚礼化妆师\"",
+      "site:zhipin.com/zhaopin/ \"奉化ING岸集婚纱礼服高级定制\" \"婚礼化妆师\"",
+      "site:58.com \"奉化ING岸集婚纱礼服高级定制\" \"婚礼化妆师\" 宁波",
+      "site:liepin.com/job/ \"奉化ING岸集婚纱礼服高级定制\" \"婚礼化妆师\" 宁波",
+      "site:51job.com/ningbo \"奉化ING岸集婚纱礼服高级定制\" \"婚礼化妆师\"",
+      "site:7192.com \"奉化ING岸集婚纱礼服高级定制\" \"婚礼化妆师\" 宁波",
+      "site:gongzuo365.com \"奉化ING岸集婚纱礼服高级定制\" \"婚礼化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 74,
+    "company": "【待核验线索】至尚映画（鄞州汽车东站）",
+    "position": "摄影师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"至尚映画（鄞州汽车东站）\" \"摄影师\" 宁波 招聘",
+      "\"至尚映画\" \"摄影师\" 宁波 招聘",
+      "\"至尚映画\" 化妆师 招聘",
+      "宁波 鄞州区汽车东站 \"至尚映画\" \"摄影师\"",
+      "site:zhipin.com/zhaopin/ \"至尚映画\" \"摄影师\"",
+      "site:58.com \"至尚映画\" \"摄影师\" 宁波",
+      "site:liepin.com/job/ \"至尚映画\" \"摄影师\" 宁波",
+      "site:51job.com/ningbo \"至尚映画\" \"摄影师\"",
+      "site:7192.com \"至尚映画\" \"摄影师\" 宁波",
+      "site:gongzuo365.com \"至尚映画\" \"摄影师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 75,
+    "company": "【待核验线索】大象映画宁波旗舰店（鄞州印象城）",
+    "position": "摄影师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"大象映画宁波旗舰店（鄞州印象城）\" \"摄影师\" 宁波 招聘",
+      "\"大象映画宁波旗舰店\" \"摄影师\" 宁波 招聘",
+      "\"大象映画宁波旗舰店\" 化妆师 招聘",
+      "宁波 鄞州区印象城 \"大象映画宁波旗舰店\" \"摄影师\"",
+      "site:zhipin.com/zhaopin/ \"大象映画宁波旗舰店\" \"摄影师\"",
+      "site:58.com \"大象映画宁波旗舰店\" \"摄影师\" 宁波",
+      "site:liepin.com/job/ \"大象映画宁波旗舰店\" \"摄影师\" 宁波",
+      "site:51job.com/ningbo \"大象映画宁波旗舰店\" \"摄影师\"",
+      "site:7192.com \"大象映画宁波旗舰店\" \"摄影师\" 宁波",
+      "site:gongzuo365.com \"大象映画宁波旗舰店\" \"摄影师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 76,
+    "company": "【待核验线索】慕谷摄影（鄞州下应）",
+    "position": "婚纱摄影师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"慕谷摄影（鄞州下应）\" \"婚纱摄影师\" 宁波 招聘",
+      "\"慕谷摄影\" \"婚纱摄影师\" 宁波 招聘",
+      "\"慕谷摄影\" 化妆师 招聘",
+      "宁波 鄞州区下应 \"慕谷摄影\" \"婚纱摄影师\"",
+      "site:zhipin.com/zhaopin/ \"慕谷摄影\" \"婚纱摄影师\"",
+      "site:58.com \"慕谷摄影\" \"婚纱摄影师\" 宁波",
+      "site:liepin.com/job/ \"慕谷摄影\" \"婚纱摄影师\" 宁波",
+      "site:51job.com/ningbo \"慕谷摄影\" \"婚纱摄影师\"",
+      "site:7192.com \"慕谷摄影\" \"婚纱摄影师\" 宁波",
+      "site:gongzuo365.com \"慕谷摄影\" \"婚纱摄影师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 77,
+    "company": "【待核验线索】宁波画意摄影服务（鄞州东钱湖）",
+    "position": "旅拍摄影师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波画意摄影服务（鄞州东钱湖）\" \"旅拍摄影师\" 宁波 招聘",
+      "\"宁波画意摄影服务\" \"旅拍摄影师\" 宁波 招聘",
+      "\"宁波画意摄影服务\" 化妆师 招聘",
+      "宁波 鄞州区东钱湖 \"宁波画意摄影服务\" \"旅拍摄影师\"",
+      "site:zhipin.com/zhaopin/ \"宁波画意摄影服务\" \"旅拍摄影师\"",
+      "site:58.com \"宁波画意摄影服务\" \"旅拍摄影师\" 宁波",
+      "site:liepin.com/job/ \"宁波画意摄影服务\" \"旅拍摄影师\" 宁波",
+      "site:51job.com/ningbo \"宁波画意摄影服务\" \"旅拍摄影师\"",
+      "site:7192.com \"宁波画意摄影服务\" \"旅拍摄影师\" 宁波",
+      "site:gongzuo365.com \"宁波画意摄影服务\" \"旅拍摄影师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 78,
+    "company": "【待核验线索】贝影文化艺术（鄞州钟公庙）",
+    "position": "儿童摄影师/摄影师助理",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"贝影文化艺术（鄞州钟公庙）\" \"儿童摄影师/摄影师助理\" 宁波 招聘",
+      "\"贝影文化艺术\" \"儿童摄影师/摄影师助理\" 宁波 招聘",
+      "\"贝影文化艺术\" 化妆师 招聘",
+      "宁波 鄞州区钟公庙 \"贝影文化艺术\" \"儿童摄影师/摄影师助理\"",
+      "site:zhipin.com/zhaopin/ \"贝影文化艺术\" \"儿童摄影师/摄影师助理\"",
+      "site:58.com \"贝影文化艺术\" \"儿童摄影师/摄影师助理\" 宁波",
+      "site:liepin.com/job/ \"贝影文化艺术\" \"儿童摄影师/摄影师助理\" 宁波",
+      "site:51job.com/ningbo \"贝影文化艺术\" \"儿童摄影师/摄影师助理\"",
+      "site:7192.com \"贝影文化艺术\" \"儿童摄影师/摄影师助理\" 宁波",
+      "site:gongzuo365.com \"贝影文化艺术\" \"儿童摄影师/摄影师助理\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 79,
+    "company": "【待核验线索】宁波知其文化传媒（鄞州印象城）",
+    "position": "摄影师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"宁波知其文化传媒（鄞州印象城）\" \"摄影师\" 宁波 招聘",
+      "\"宁波知其文化传媒\" \"摄影师\" 宁波 招聘",
+      "\"宁波知其文化传媒\" 化妆师 招聘",
+      "宁波 鄞州区印象城 \"宁波知其文化传媒\" \"摄影师\"",
+      "site:zhipin.com/zhaopin/ \"宁波知其文化传媒\" \"摄影师\"",
+      "site:58.com \"宁波知其文化传媒\" \"摄影师\" 宁波",
+      "site:liepin.com/job/ \"宁波知其文化传媒\" \"摄影师\" 宁波",
+      "site:51job.com/ningbo \"宁波知其文化传媒\" \"摄影师\"",
+      "site:7192.com \"宁波知其文化传媒\" \"摄影师\" 宁波",
+      "site:gongzuo365.com \"宁波知其文化传媒\" \"摄影师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
+  },
+  {
+    "job_id": 80,
+    "company": "【待核验线索】象山史伦德摄影工作室（象山丹东）",
+    "position": "摄影工作室化妆师",
+    "searched_at": "2026-08-30T16:11:52+0000",
+    "search_queries": [
+      "\"象山史伦德摄影工作室（象山丹东）\" \"摄影工作室化妆师\" 宁波 招聘",
+      "\"象山史伦德摄影\" \"摄影工作室化妆师\" 宁波 招聘",
+      "\"象山史伦德摄影\" 化妆师 招聘",
+      "宁波 象山县丹东 \"象山史伦德摄影\" \"摄影工作室化妆师\"",
+      "site:zhipin.com/zhaopin/ \"象山史伦德摄影\" \"摄影工作室化妆师\"",
+      "site:58.com \"象山史伦德摄影\" \"摄影工作室化妆师\" 宁波",
+      "site:liepin.com/job/ \"象山史伦德摄影\" \"摄影工作室化妆师\" 宁波",
+      "site:51job.com/ningbo \"象山史伦德摄影\" \"摄影工作室化妆师\"",
+      "site:7192.com \"象山史伦德摄影\" \"摄影工作室化妆师\" 宁波",
+      "site:gongzuo365.com \"象山史伦德摄影\" \"摄影工作室化妆师\""
+    ],
+    "candidates": [],
+    "match_score": 0,
+    "final_status": "pending",
+    "verification_source": "",
+    "verification_url": "",
+    "direct_url": "",
+    "evidence": {
+      "company_match": false,
+      "title_match": false,
+      "location_match": false,
+      "salary_match": false,
+      "experience_education_match": false,
+      "current_page": false,
+      "score": 0
+    },
+    "error": "搜索渠道没有返回可用候选结果",
+    "verification_state": ""
   }
 ]

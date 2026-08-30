@@ -105,6 +105,7 @@ mark { background: #ffe066; color: #20232a; border-radius: 3px; padding: 0 1px; 
 .verified-badge { background: #dcfce7; color: #166534; }
 .located-badge { background: var(--blue-soft); color: var(--blue); }
 .weak-badge { background: #fff1d6; color: #a15c00; }
+.stale-badge { background: #fee2e2; color: #991b1b; border-radius: 999px; padding: 1px 9px; font-size: .75rem; font-weight: 600; white-space: nowrap; }
 .new-badge {
   background: var(--accent-soft); color: var(--accent); border-radius: 999px;
   padding: 1px 9px; font-size: .75rem; white-space: nowrap;
@@ -166,7 +167,7 @@ footer a { color: var(--muted); }
     <button data-tab="high">🏆 高端</button>
     <button data-tab="mid">🥈 中端</button>
     <button data-tab="low">⚙️ 低端</button>
-    <select id="region-filter"><option value="all">全部区域</option><option value="鄞州区">鄞州区</option><option value="海曙区">海曙区</option><option value="江北区">江北区</option><option value="镇海区">镇海区</option><option value="北仑区">北仑区</option><option value="奉化区">奉化区</option><option value="慈溪">慈溪</option><option value="余姚">余姚</option><option value="宁海">宁海</option><option value="象山">象山</option><option value="海曙区机场路">海曙区机场路</option><option value="海曙区/鄞州区">海曙区/鄞州区</option><option value="奉化区岳林">奉化区岳林</option><option value="鄞州区汽车东站">鄞州区汽车东站</option><option value="鄞州区明空间创业园">鄞州区明空间创业园</option><option value="鄞州区东钱湖">鄞州区东钱湖</option><option value="鄞州区福明">鄞州区福明</option><option value="宁波（平台入口）">宁波（平台入口）</option><option value="宁波">宁波</option><option value="鄞州区下应">鄞州区下应</option><option value="鄞州区印象城">鄞州区印象城</option><option value="慈溪市浒山">慈溪市浒山</option><option value="鄞州区钟公庙">鄞州区钟公庙</option><option value="鄞州区姜山">鄞州区姜山</option><option value="象山县丹东">象山县丹东</option><option value="慈溪宗汉">慈溪宗汉</option></select>
+    <select id="region-filter"><option value="all">全部区域</option><option value="鄞州区">鄞州区</option><option value="海曙区">海曙区</option><option value="江北区">江北区</option><option value="镇海区">镇海区</option><option value="北仑区">北仑区</option><option value="奉化区">奉化区</option><option value="慈溪">慈溪</option><option value="余姚">余姚</option><option value="宁海">宁海</option><option value="象山">象山</option><option value="海曙区机场路">海曙区机场路</option><option value="鄞州区钟公庙">鄞州区钟公庙</option><option value="象山县丹东">象山县丹东</option><option value="海曙区/鄞州区">海曙区/鄞州区</option><option value="慈溪宗汉">慈溪宗汉</option><option value="奉化区岳林">奉化区岳林</option><option value="宁波（平台入口）">宁波（平台入口）</option><option value="鄞州区东钱湖">鄞州区东钱湖</option><option value="鄞州区福明">鄞州区福明</option><option value="鄞州区明空间创业园">鄞州区明空间创业园</option><option value="鄞州区印象城">鄞州区印象城</option><option value="鄞州区姜山">鄞州区姜山</option><option value="慈溪市浒山">慈溪市浒山</option><option value="鄞州区下应">鄞州区下应</option><option value="鄞州区汽车东站">鄞州区汽车东站</option><option value="宁波">宁波</option></select>
     <input id="kw-filter" type="search" placeholder="🔍 搜岗位/公司/关键词…" autocomplete="off">
   </div>
   <section class="job-section" id="sec-high">
@@ -221,14 +222,14 @@ footer a { color: var(--muted); }
   <div class="job-link"><span>🧭 见下方指路（无直链）</span></div>
 <div class="job-note">💡 慈溪本地最高薪化妆师岗位，服务模特演员及活动</div>
 <div class="job-guide">🧭 指路：58同城慈溪频道搜索&quot;爱肖肖婚纱摄影&quot;查看原帖</div>
-</div><div class="job-item qualify-row" data-tier="high" data-qualify="1" data-direct="0" data-status="pending" data-salary="12500" data-region="鄞州区东钱湖" data-search="【待核验线索】宁波慕摄影 婚纱摄影师/化妆师/化妆主管 月薪10000-15000 高端 鄞州区东钱湖   未找到 pending">
+</div><div class="job-item qualify-row" data-tier="high" data-qualify="1" data-direct="0" data-status="pending" data-salary="12500" data-region="鄞州区东钱湖" data-search="【待核验线索】宁波慕摄影 婚纱摄影师/化妆师/化妆主管 月薪10000-15000 高端 鄞州区东钱湖   搜索引擎 pending">
   <div class="job-header">
     <span class="job-number">#62</span>
     <span class="job-title">【待核验线索】宁波慕摄影 — 婚纱摄影师/化妆师/化妆主管</span>
 <span class="qualify-badge">✅ 达标8K+</span><span class="guide-badge">🧭 待核验</span>
   </div>
   <div class="job-meta"><span class="salary">💰 月薪10000-15000 <em class="est">估月入约1.2万</em></span><span class="tier tier-high">🏆 高端</span><span>📍 鄞州区东钱湖</span><span>🎓 3-5年经验，学历不限</span><span>📅 2026-08-30</span></div>
-  <div class="job-link"><span>🧭 见下方指路（无直链）</span></div>
+  <div class="job-link"><a class="verify-link" href="https://cn.bing.com/search?q=site%3Agongzuo365.com%20%22%E5%AE%81%E6%B3%A2%E6%85%95%E6%91%84%E5%BD%B1%22%20%22%E5%A9%9A%E7%BA%B1%E6%91%84%E5%BD%B1%E5%B8%88/%E5%8C%96%E5%A6%86%E5%B8%88/%E5%8C%96%E5%A6%86%E4%B8%BB%E7%AE%A1%22" target="_blank" rel="noopener">🔎 核验来源</a></div>
 <div class="job-note">💡 BOSS站内搜索快照显示的复合岗位；暂无公开岗位详情直链，需登录BOSS核实具体招聘方向和提成规则</div>
 <div class="job-guide">🧭 指路：BOSS直聘 App 搜索“宁波慕摄影 化妆师”</div>
 </div><div class="job-item qualify-row" data-tier="high" data-qualify="1" data-direct="0" data-status="pending" data-salary="12500" data-region="慈溪宗汉" data-search="【待核验线索】慈溪莎曼塔婚纱摄影 婚纱摄影化妆师 月薪10000-15000 高端 慈溪宗汉   未找到 pending">
@@ -341,14 +342,14 @@ footer a { color: var(--muted); }
   <div class="job-link"><span>🧭 见下方指路（无直链）</span></div>
 <div class="job-note">💡 BOSS宁波婚纱摄影化妆师搜索快照显示的岗位线索；该品牌在宁波婚礼摄影市场有一定知名度，但暂无公开岗位详情直链，需登录BOSS核实当前状态</div>
 <div class="job-guide">🧭 指路：BOSS直聘 App 搜索“宁波奥斯卡婚纱摄影 化妆师”</div>
-</div><div class="job-item qualify-row" data-tier="high" data-qualify="1" data-direct="0" data-status="pending" data-salary="8500" data-region="海曙区" data-search="宁波薇蒽希摄影有限公司（海曙都市仁和中心） 婚礼化妆师 月薪6000-11000（6k起） 高端 海曙区   未找到 pending">
+</div><div class="job-item qualify-row" data-tier="high" data-qualify="1" data-direct="0" data-status="pending" data-salary="8500" data-region="海曙区" data-search="宁波薇蒽希摄影有限公司（海曙都市仁和中心） 婚礼化妆师 月薪6000-11000（6k起） 高端 海曙区   boss直聘 pending">
   <div class="job-header">
     <span class="job-number">#4</span>
     <span class="job-title">宁波薇蒽希摄影有限公司（海曙都市仁和中心） — 婚礼化妆师</span>
 <span class="qualify-badge">✅ 达标8K+</span><span class="guide-badge">🧭 待核验</span>
   </div>
   <div class="job-meta"><span class="salary">💰 月薪6000-11000（6k起） <em class="est">估月入约8500元</em></span><span class="tier tier-high">🏆 高端</span><span>📍 海曙区</span><span>🎓 不限，3-5年婚礼化妆经验</span><span>📅 2026-02-10</span></div>
-  <div class="job-link"><span>🧭 见下方指路（无直链）</span></div>
+  <div class="job-link"><a class="verify-link" href="https://html.duckduckgo.com/html/?q=%22%E5%AE%81%E6%B3%A2%E8%96%87%E8%92%BD%E5%B8%8C%E6%91%84%E5%BD%B1%22%20%E5%8C%96%E5%A6%86%E5%B8%88%20%E6%8B%9B%E8%81%98" target="_blank" rel="noopener">🔎 核验来源</a></div>
 <div class="job-note">💡 主打婚纱/婚礼跟妆，09:00-17:30做六休一。⚠️ 注意：黑猫投诉平台有&quot;招转培&quot;投诉记录（以招聘名义诱导报名付费培训、办合约贷款，2025年5月），面试若要求交钱培训请立即走人</div>
 <div class="job-guide">🧭 指路：58同城搜索&quot;薇蒽希 化妆师&quot;查看婚礼化妆师原帖</div>
 </div><div class="job-item" data-tier="high" data-qualify="0" data-direct="0" data-status="pending" data-salary="" data-region="鄞州区明空间创业园" data-search="【待核验线索】宁波鼎尖文化传播（鄞州明空间创业园） 高级化妆师 面议 高端 鄞州区明空间创业园   未找到 pending">
@@ -474,14 +475,14 @@ footer a { color: var(--muted); }
   <div class="job-link"><span>🧭 见下方指路（无直链）</span></div>
 <div class="job-note">💡 形象设计公司岗位，上限1.2万</div>
 <div class="job-guide">🧭 指路：猎聘宁波搜索&quot;吉田形象设计&quot;查看岗位</div>
-</div><div class="job-item qualify-row" data-tier="mid" data-qualify="1" data-direct="0" data-status="pending" data-salary="9500" data-region="北仑区" data-search="化妆师（北仑新碶） 化妆师 月薪7000-12000 中端 北仑区   未找到 pending">
+</div><div class="job-item qualify-row" data-tier="mid" data-qualify="1" data-direct="0" data-status="pending" data-salary="9500" data-region="北仑区" data-search="化妆师（北仑新碶） 化妆师 月薪7000-12000 中端 北仑区   搜索引擎 pending">
   <div class="job-header">
     <span class="job-number">#10</span>
     <span class="job-title">化妆师（北仑新碶） — 化妆师</span>
 <span class="qualify-badge">✅ 达标8K+</span><span class="guide-badge">🧭 待核验</span>
   </div>
   <div class="job-meta"><span class="salary">💰 月薪7000-12000 <em class="est">估月入约9500元</em></span><span class="tier tier-mid">🥈 中端</span><span>📍 北仑区</span><span>🎓 不限</span><span>📅 2026-08-30</span></div>
-  <div class="job-link"><span>🧭 见下方指路（无直链）</span></div>
+  <div class="job-link"><a class="verify-link" href="https://cn.bing.com/search?q=%E5%AE%81%E6%B3%A2%20%E5%8C%97%E4%BB%91%E5%8C%BA%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22%20%22%E5%8C%96%E5%A6%86%E5%B8%88%22" target="_blank" rel="noopener">🔎 核验来源</a></div>
 <div class="job-note">💡 北仑区高薪化妆岗</div>
 <div class="job-guide">🧭 指路：58同城北仑频道搜索&quot;化妆师&quot;筛选新碶街道查看</div>
 </div><div class="job-item qualify-row" data-tier="mid" data-qualify="1" data-direct="0" data-status="pending" data-salary="8500" data-region="余姚" data-search="余姚梵朵摄影有限责任公司（凤山） 化妆师 月薪6000-11000 中端 余姚   未找到 pending">
