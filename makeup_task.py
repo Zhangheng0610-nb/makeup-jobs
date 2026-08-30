@@ -437,7 +437,8 @@ def get_prompt(mode):
    - 够 10 条就动笔；**第15轮前必须 write_file 写入 {JOBS_MD}**（文件头部标注"本期收录N条"），剩余轮次补搜替换低质条目
    - 目标 30-40 条，实际搜到多少写多少，不足据实写，宁缺毋滥，**禁止编造岗位和链接**
    - 🆕 只标本次新收录的；保留旧岗位不标
-6. 构建发布：先检测运行环境——run_bash 执行 `python -c "import os;print(1 if os.environ.get('MAKEUP_BASE_DIR') else 0)"`：
+6. **自动核验流水线（必须在构建前执行）**：岗位数据写入后，先运行 `python "{BASE_DIR / 'verify_jobs.py'}" --apply`。它会对所有 `pending`、无直链或标记待核验的岗位按公司/岗位/地区/薪资/经验学历/页面状态评分，并写入 `verification_status`、`verification_score`、`verification_evidence` 与 `data/verification-log.json`；详情页被登录/安全验证拦截时只能标 `located`，不得绕过验证。不要手工把 pending 改成 verified。
+7. 构建发布：先检测运行环境——run_bash 执行 `python -c "import os;print(1 if os.environ.get('MAKEUP_BASE_DIR') else 0)"`：
    - **输出 1 = 云端（GitHub Actions）**：只把 {JOBS_MD} 写好即可，**禁止执行任何 git/build 命令**（Actions 会自动构建部署并同步仓库），做完就结束
    - **输出 0 = 本地**：依次执行 `cd "{SITE_DIR}" && python build.py` → `cd "{SITE_DIR}" && git add -A && git commit -m "Update makeup jobs {TODAY_STR}" && git push origin main`
 
