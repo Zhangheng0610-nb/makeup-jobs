@@ -471,13 +471,17 @@ def build_html(data: dict) -> str:
     qualified = sum(1 for it in items if it['qualify'])
     def status_of(it):
         status = it.get('verification_status', '')
-        return status if status in {'verified', 'located', 'weak_verified', 'pending'} else ('pending' if not it['links'] else 'verified')
+        # Legacy direct links are not automatically called verified.  They
+        # remain usable application links, but only the new verifier may set
+        # verified/located/weak_verified.
+        return status if status in {'verified', 'located', 'weak_verified', 'pending'} else ('pending' if not it['links'] else 'legacy')
     verified = sum(1 for it in items if status_of(it) == 'verified')
     located = sum(1 for it in items if status_of(it) == 'located')
     weak = sum(1 for it in items if status_of(it) == 'weak_verified')
     pending = sum(1 for it in items if status_of(it) == 'pending')
+    direct = sum(1 for it in items if it['links'])
     summary_html = (
-        f'<p><b>{verified}</b> 条已核验 · <b>{located}</b> 条已确认在招 · <b>{weak}</b> 条待复核 · <b>{pending}</b> 条待核验 · <b>✅ {qualified}</b> 条估算月入8K+</p>'
+        f'<p><b>{verified}</b> 条已核验 · <b>{located}</b> 条已确认在招 · <b>{weak}</b> 条已发现相关招聘 · <b>{pending}</b> 条待核验 · <b>{direct}</b> 条有直链 · <b>✅ {qualified}</b> 条估算月入8K+</p>'
         f'<p class="summary-src">数据来源：58同城、智联、前程无忧、店长直聘、全影人才网、象山明聘、小红书、抖音等。</p>'
     )
 
@@ -521,7 +525,7 @@ def build_html(data: dict) -> str:
 <div class="wrap">
   <header>
     <h1>💄 宁波化妆师招聘聚合</h1>
-    <p class="meta">📅 更新于 {update_date} · 共 <b>{total}</b> 条 · 已核验 <b>{verified}</b> · 已确认在招 <b>{located}</b> · 待核验 <b>{pending}</b> · 达标 <b id="stat-shown-qualify">{qualified}</b></p>
+    <p class="meta">📅 更新于 {update_date} · 共 <b>{total}</b> 条 · 已核验 <b>{verified}</b> · 已确认在招 <b>{located}</b> · 待核验 <b>{pending}</b> · 有直链 <b>{direct}</b> · 达标 <b id="stat-shown-qualify">{qualified}</b></p>
   </header>
   <div class="update-banner">🧑‍💻 要更新岗位？<a href="update.html">查看运营说明</a>（发布前自动核验：直链、在招状态与待复核分层）</div>
   <div class="summary">{summary_html}</div>
