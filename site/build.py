@@ -135,7 +135,7 @@ def parse_jobs(md_file: Path) -> dict:
                 'salary': '', 'tier': '', 'price': '', 'region': '',
                 'publish_date': '', 'education': '', 'location': '', 'deadline': '',
                 'note': '', 'guide': '', 'links': [],
-                'verification_status': '', 'verification_source': '',
+                'verification_status': '', 'verification_source': '', 'verification_state': '',
                 'verification_url': '', 'direct_url': '', 'verification_score': '',
                 'verified_at': '', 'verification_evidence': '', 'verification_error': '',
             }
@@ -166,6 +166,8 @@ def parse_jobs(md_file: Path) -> dict:
                 cur['verification_status'] = val.lower()
             elif name == 'verification_source':
                 cur['verification_source'] = val
+            elif name == 'verification_state':
+                cur['verification_state'] = val.lower()
             elif name == 'verification_url':
                 cur['verification_url'] = val
             elif name == 'direct_url':
@@ -306,6 +308,7 @@ mark { background: #ffe066; color: #20232a; border-radius: 3px; padding: 0 1px; 
 .verified-badge { background: #dcfce7; color: #166534; }
 .located-badge { background: var(--blue-soft); color: var(--blue); }
 .weak-badge { background: #fff1d6; color: #a15c00; }
+.stale-badge { background: #fee2e2; color: #991b1b; border-radius: 999px; padding: 1px 9px; font-size: .75rem; font-weight: 600; white-space: nowrap; }
 .new-badge {
   background: var(--accent-soft); color: var(--accent); border-radius: 999px;
   padding: 1px 9px; font-size: .75rem; white-space: nowrap;
@@ -398,6 +401,8 @@ def render_card(it: dict) -> str:
     if status in status_labels:
         cls, label = status_labels[status]
         badges += f'<span class="{cls}">{label}</span>'
+    if it.get('verification_state') in {'stale', 'possibly_closed'}:
+        badges += '<span class="stale-badge">⚠️ 可能已关闭</span>'
     if it['is_new']:
         badges += '<span class="new-badge">🆕 新增</span>'
     title = f"{it['company']} — {it['position']}" if it['position'] else it['company']
