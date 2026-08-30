@@ -7,6 +7,9 @@
 """
 import re
 import html as html_mod
+import os
+import subprocess
+import sys
 from datetime import date, datetime
 from pathlib import Path
 
@@ -555,6 +558,16 @@ def build_sitemap(update_date: str) -> str:
 '''
 
 def main():
+    # GitHub Actions runs this builder after checkout.  Run the verifier here
+    # so the existing deploy workflow also gets the verification gate even if
+    # its YAML cannot be edited with the current token scope.  Local builds
+    # remain deterministic and do not make network requests.
+    if os.environ.get('GITHUB_ACTIONS', '').lower() == 'true' and not os.environ.get('MAKEUP_VERIFY_IN_BUILD'):
+        verifier = BASE_DIR / 'verify_jobs.py'
+        if verifier.exists():
+            verify_env = os.environ.copy()
+            verify_env['MAKEUP_VERIFY_IN_BUILD'] = '1'
+            subprocess.run([sys.executable, str(verifier), '--apply'], cwd=str(BASE_DIR), check=True, env=verify_env)
     data = parse_jobs(MD_FILE)
     html_out = build_html(data)
     (OUT_DIR / 'index.html').write_text(html_out, encoding='utf-8')
