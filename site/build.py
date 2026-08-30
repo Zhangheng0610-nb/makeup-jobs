@@ -132,6 +132,9 @@ def parse_jobs(md_file: Path) -> dict:
                 'salary': '', 'tier': '', 'price': '', 'region': '',
                 'publish_date': '', 'education': '', 'location': '', 'deadline': '',
                 'note': '', 'guide': '', 'links': [],
+                'verification_status': '', 'verification_source': '',
+                'verification_url': '', 'direct_url': '', 'verification_score': '',
+                'verified_at': '', 'verification_evidence': '', 'verification_error': '',
             }
             items.append(cur)
             continue
@@ -156,6 +159,22 @@ def parse_jobs(md_file: Path) -> dict:
                 cur['deadline'] = val
             elif '指路' in name:
                 cur['guide'] = val
+            elif name == 'verification_status':
+                cur['verification_status'] = val.lower()
+            elif name == 'verification_source':
+                cur['verification_source'] = val
+            elif name == 'verification_url':
+                cur['verification_url'] = val
+            elif name == 'direct_url':
+                cur['direct_url'] = val
+            elif name == 'verification_score':
+                cur['verification_score'] = val
+            elif name == 'verified_at':
+                cur['verified_at'] = val
+            elif name == 'verification_evidence':
+                cur['verification_evidence'] = val
+            elif name == 'verification_error':
+                cur['verification_error'] = val
             continue
         m_link = re.match(r'-\s*🔗\s*\[(.+?)\]\((.+?)\)', s)
         if cur and m_link:
@@ -277,6 +296,13 @@ mark { background: #ffe066; color: #20232a; border-radius: 3px; padding: 0 1px; 
   background: #fff1d6; color: #a15c00; border-radius: 999px;
   padding: 1px 9px; font-size: .75rem; font-weight: 600; white-space: nowrap;
 }
+.verified-badge, .located-badge, .weak-badge {
+  border-radius: 999px; padding: 1px 9px; font-size: .75rem;
+  font-weight: 600; white-space: nowrap;
+}
+.verified-badge { background: #dcfce7; color: #166534; }
+.located-badge { background: var(--blue-soft); color: var(--blue); }
+.weak-badge { background: #fff1d6; color: #a15c00; }
 .new-badge {
   background: var(--accent-soft); color: var(--accent); border-radius: 999px;
   padding: 1px 9px; font-size: .75rem; white-space: nowrap;
@@ -290,6 +316,7 @@ mark { background: #ffe066; color: #20232a; border-radius: 3px; padding: 0 1px; 
 .tier-low { background: var(--gray-soft); color: var(--gray); }
 .job-link { margin-top: 8px; font-size: .88rem; }
 .job-link a { color: var(--accent); text-decoration: none; word-break: break-all; }
+.job-link a.verify-link { color: var(--blue); margin-left: 12px; }
 .job-link a:hover { text-decoration: underline; }
 .job-note { margin-top: 6px; font-size: .85rem; color: var(--text); background: var(--accent-soft); border-left: 3px solid var(--accent); padding: 5px 10px; border-radius: 4px; }
 .job-guide { margin-top: 6px; font-size: .85rem; color: var(--blue); background: var(--blue-soft); border-left: 3px solid var(--blue); padding: 5px 10px; border-radius: 4px; }
@@ -316,6 +343,7 @@ footer a { color: var(--muted); }
   .job-title { font-size: .92rem; }
   .job-meta { gap: 4px 9px; margin-top: 6px; font-size: .8rem; }
   .job-link, .job-note, .job-guide { font-size: .8rem; }
+  .job-link a.verify-link { margin-left: 8px; }
   .job-note, .job-guide { padding: 4px 8px; }
   .disclaimer { margin-top: 16px; padding: 8px 10px; }
 }
@@ -339,22 +367,39 @@ def render_card(it: dict) -> str:
         meta.append(f'<span>📅 {html_mod.escape(it["publish_date"][:10])}</span>')
     links = ''.join(
         f'<a href="{html_mod.escape(u)}" target="_blank" rel="noopener">🔗 {html_mod.escape(t)}</a>'
-        for t, u in it['links']) or '<span>🧭 见下方指路（无直链）</span>'
+        for t, u in it['links'])
+    verify_url = it.get('direct_url') or it.get('verification_url')
+    if verify_url and verify_url not in {u for _, u in it['links']}:
+        verify_label = 'BOSS详情（可能需登录）' if 'zhipin.com/job_detail/' in verify_url else '核验来源'
+        links += f'<a class="verify-link" href="{html_mod.escape(verify_url)}" target="_blank" rel="noopener">🔎 {verify_label}</a>'
+    if not links:
+        links = '<span>🧭 见下方指路（无直链）</span>'
     note = f'<div class="job-note">💡 {md_inline(it["note"])}</div>' if it['note'] else ''
     guide = f'<div class="job-guide">🧭 指路：{md_inline(it["guide"])}</div>' if it['guide'] else ''
 
     search_text = ' '.join([it['company'], it['position'], it['salary'], it['tier'],
-                            it['region'], it['price'], it['location']]).lower()
+                            it['region'], it['price'], it['location'],
+                            it.get('verification_source', ''), it.get('verification_status', '')]).lower()
     badges = ''
     if it['qualify']:
         badges += '<span class="qualify-badge">✅ 达标8K+</span>'
-    if '待核验' in it['company'] or (it['guide'] and not it['links']):
-        badges += '<span class="guide-badge">🧭 待核验</span>'
+    status = it.get('verification_status', '')
+    if not status and not it['links']:
+        status = 'pending'
+    status_labels = {
+        'verified': ('verified-badge', '✅ 已核验'),
+        'located': ('located-badge', '🔗 已确认在招'),
+        'weak_verified': ('weak-badge', '⚠️ 已发现相关招聘'),
+        'pending': ('guide-badge', '🧭 待核验'),
+    }
+    if status in status_labels:
+        cls, label = status_labels[status]
+        badges += f'<span class="{cls}">{label}</span>'
     if it['is_new']:
         badges += '<span class="new-badge">🆕 新增</span>'
     title = f"{it['company']} — {it['position']}" if it['position'] else it['company']
 
-    return f'''<div class="job-item{" qualify-row" if it["qualify"] else ""}" data-tier="{it["tier_key"]}" data-qualify="{1 if it["qualify"] else 0}" data-direct="{1 if it["links"] else 0}" data-salary="{it["est"] or ''}" data-region="{html_mod.escape(it["region"] or '宁波')}" data-search="{html_mod.escape(search_text)}">
+    return f'''<div class="job-item{" qualify-row" if it["qualify"] else ""}" data-tier="{it["tier_key"]}" data-qualify="{1 if it["qualify"] else 0}" data-direct="{1 if it["links"] else 0}" data-status="{html_mod.escape(status)}" data-salary="{it["est"] or ''}" data-region="{html_mod.escape(it["region"] or '宁波')}" data-search="{html_mod.escape(search_text)}">
   <div class="job-header">
     <span class="job-number">#{it["number"]}</span>
     <span class="job-title">{html_mod.escape(title)}</span>
@@ -421,10 +466,15 @@ def build_html(data: dict) -> str:
     items = data['items']
     total = len(items)
     qualified = sum(1 for it in items if it['qualify'])
-    leads = sum(1 for it in items if '待核验' in it['company'] or (it['guide'] and not it['links']))
-    verified = total - leads
+    def status_of(it):
+        status = it.get('verification_status', '')
+        return status if status in {'verified', 'located', 'weak_verified', 'pending'} else ('pending' if not it['links'] else 'verified')
+    verified = sum(1 for it in items if status_of(it) == 'verified')
+    located = sum(1 for it in items if status_of(it) == 'located')
+    weak = sum(1 for it in items if status_of(it) == 'weak_verified')
+    pending = sum(1 for it in items if status_of(it) == 'pending')
     summary_html = (
-        f'<p><b>{verified}</b> 条已核验岗位 · <b>{leads}</b> 条待核验线索 · <b>✅ {qualified}</b> 条估算月入8K+ · 仅收宁波</p>'
+        f'<p><b>{verified}</b> 条已核验 · <b>{located}</b> 条已确认在招 · <b>{weak}</b> 条待复核 · <b>{pending}</b> 条待核验 · <b>✅ {qualified}</b> 条估算月入8K+</p>'
         f'<p class="summary-src">数据来源：58同城、智联、前程无忧、店长直聘、全影人才网、象山明聘、小红书、抖音等。</p>'
     )
 
@@ -468,9 +518,9 @@ def build_html(data: dict) -> str:
 <div class="wrap">
   <header>
     <h1>💄 宁波化妆师招聘聚合</h1>
-    <p class="meta">📅 更新于 {update_date} · 共 <b>{total}</b> 条 · 已核验 <b>{verified}</b> · 待核验 <b>{leads}</b> · 达标 <b id="stat-shown-qualify">{qualified}</b></p>
+    <p class="meta">📅 更新于 {update_date} · 共 <b>{total}</b> 条 · 已核验 <b>{verified}</b> · 已确认在招 <b>{located}</b> · 待核验 <b>{pending}</b> · 达标 <b id="stat-shown-qualify">{qualified}</b></p>
   </header>
-  <div class="update-banner">🧑‍💻 要更新岗位？<a href="update.html">查看运营说明</a>（现在由 Codex 人工核验）</div>
+  <div class="update-banner">🧑‍💻 要更新岗位？<a href="update.html">查看运营说明</a>（发布前自动核验：直链、在招状态与待复核分层）</div>
   <div class="summary">{summary_html}</div>
   <div class="filter-bar">
     <button data-tab="all" class="active">全部</button>
